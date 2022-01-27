@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Wue-go-sPn">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gibson-Light.otf">
+            <string>Gibson-Light</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--History View Controller-->
+        <scene sceneID="wqS-33-WPM">
+            <objects>
+                <viewController storyboardIdentifier="HistoryViewController" id="Wue-go-sPn" customClass="HistoryViewController" customModule="KneetlyWashersApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="INa-nu-Xd5"/>
+                        <viewControllerLayoutGuide type="bottom" id="tUE-KR-oAR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZeR-Ze-FOf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="123" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YCe-FC-2Pp">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="HistoryCell" rowHeight="100" id="sGl-LU-uKa" customClass="HistoryCell" customModule="KneetlyWashersApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sGl-LU-uKa" id="GUu-lh-5Rm">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tdG-PN-QMT">
+                                                    <rect key="frame" x="26" y="8" width="199" height="19"/>
+                                                    <fontDescription key="fontDescription" name="Gibson-Light" family="Gibson" pointSize="19"/>
+                                                    <color key="textColor" red="0.20000000000000001" green="0.3803921569" blue="0.49019607840000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vd0-dK-Sa3">
+                                                    <rect key="frame" x="26" y="35" width="199" height="18"/>
+                                                    <fontDescription key="fontDescription" name="Gibson-Light" family="Gibson" pointSize="18"/>
+                                                    <color key="textColor" red="0.59999999999999998" green="0.67843137249999996" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jfP-0i-KWf">
+                                                    <rect key="frame" x="26" y="61" width="199" height="18"/>
+                                                    <fontDescription key="fontDescription" name="Gibson-Light" family="Gibson" pointSize="18"/>
+                                                    <color key="textColor" red="0.59999999999999998" green="0.67843137249999996" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jA1-3r-w7G">
+                                                    <rect key="frame" x="233" y="37" width="134" height="42"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="42" id="Adk-oB-dcv"/>
+                                                        <constraint firstAttribute="width" constant="134" id="Glv-7P-RAw"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="jA1-3r-w7G" secondAttribute="bottom" constant="8" id="52f-9e-Vi8"/>
+                                                <constraint firstItem="vd0-dK-Sa3" firstAttribute="leading" secondItem="tdG-PN-QMT" secondAttribute="leading" id="6EG-UR-bxN"/>
+                                                <constraint firstItem="vd0-dK-Sa3" firstAttribute="top" secondItem="tdG-PN-QMT" secondAttribute="bottom" constant="8" symbolic="YES" id="Agb-Sv-499"/>
+                                                <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="jfP-0i-KWf" secondAttribute="bottom" constant="8" id="LbE-QI-BC1"/>
+                                                <constraint firstAttribute="topMargin" secondItem="tdG-PN-QMT" secondAttribute="top" id="Mt0-Tw-Bal"/>
+                                                <constraint firstAttribute="leading" secondItem="tdG-PN-QMT" secondAttribute="leading" constant="-26" id="TAn-gw-qQh"/>
+                                                <constraint firstItem="jA1-3r-w7G" firstAttribute="bottom" secondItem="jfP-0i-KWf" secondAttribute="bottom" id="UrP-wh-EwD"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="jA1-3r-w7G" secondAttribute="trailing" id="gQl-3y-4gO"/>
+                                                <constraint firstItem="vd0-dK-Sa3" firstAttribute="trailing" secondItem="tdG-PN-QMT" secondAttribute="trailing" id="jqW-nj-3tF"/>
+                                                <constraint firstItem="jA1-3r-w7G" firstAttribute="leading" secondItem="tdG-PN-QMT" secondAttribute="trailing" constant="8" symbolic="YES" id="oty-f0-op3"/>
+                                                <constraint firstItem="jfP-0i-KWf" firstAttribute="leading" secondItem="vd0-dK-Sa3" secondAttribute="leading" id="pe6-1G-zBj"/>
+                                                <constraint firstItem="jfP-0i-KWf" firstAttribute="top" secondItem="vd0-dK-Sa3" secondAttribute="bottom" constant="8" symbolic="YES" id="unk-2n-Fi1"/>
+                                                <constraint firstItem="jfP-0i-KWf" firstAttribute="trailing" secondItem="vd0-dK-Sa3" secondAttribute="trailing" id="wo3-7c-QSY"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="timeLabel" destination="tdG-PN-QMT" id="vNV-N9-UYe"/>
+                                            <outlet property="vehicleNameLabel" destination="vd0-dK-Sa3" id="2Hb-DL-7hH"/>
+                                            <outlet property="vehicleTypeImageView" destination="jA1-3r-w7G" id="qbn-yv-hz4"/>
+                                            <outlet property="washTypeLabel" destination="jfP-0i-KWf" id="jIT-5L-XVw"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Wue-go-sPn" id="LfM-oD-xG3"/>
+                                    <outlet property="delegate" destination="Wue-go-sPn" id="8ZW-Bk-ZI0"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YCe-FC-2Pp" firstAttribute="bottom" secondItem="tUE-KR-oAR" secondAttribute="top" id="GpR-vW-hee"/>
+                            <constraint firstItem="YCe-FC-2Pp" firstAttribute="leading" secondItem="ZeR-Ze-FOf" secondAttribute="leading" id="Kd2-KM-aJl"/>
+                            <constraint firstAttribute="trailing" secondItem="YCe-FC-2Pp" secondAttribute="trailing" id="LTT-5E-PJs"/>
+                            <constraint firstItem="YCe-FC-2Pp" firstAttribute="top" secondItem="ZeR-Ze-FOf" secondAttribute="top" id="PGc-al-R5o"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="YCe-FC-2Pp" id="htj-Cs-LZm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S85-jQ-fqM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="112.8" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>285292375989-oefrhme4unvctm35olj7rave3830oljj.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.285292375989-oefrhme4unvctm35olj7rave3830oljj</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDE5DRiawJapYwUIePzUg0E5PYcQ7UC9Zk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>285292375989</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.beitsafe.KneetlyUser</string>
+	<key>PROJECT_ID</key>
+	<string>kneetly-43f06</string>
+	<key>STORAGE_BUCKET</key>
+	<string>kneetly-43f06.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:285292375989:ios:8cf7930f0672aedd</string>
+	<key>DATABASE_URL</key>
+	<string>https://kneetly-43f06.firebaseio.com</string>
+</dict>
+</plist>

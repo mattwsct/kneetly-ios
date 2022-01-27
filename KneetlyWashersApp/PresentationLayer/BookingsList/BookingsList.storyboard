@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2qL-KG-I3V">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gibson-Light.otf">
+            <string>Gibson-Light</string>
+        </array>
+        <array key="Gibson.otf">
+            <string>Gibson-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Bookings List View Controller-->
+        <scene sceneID="qZh-iK-CqZ">
+            <objects>
+                <viewController storyboardIdentifier="BookingsListViewController" id="2qL-KG-I3V" customClass="BookingsListViewController" customModule="KneetlyWashersApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="o2o-jH-FRH"/>
+                        <viewControllerLayoutGuide type="bottom" id="2x8-Ex-HcX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kDQ-hn-K4h">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="C7l-DM-8UX">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ScheduledBookingCell" rowHeight="60" id="sCy-Vq-fTe" customClass="ScheduledBookingCell" customModule="KneetlyWashersApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sCy-Vq-fTe" id="UTf-IT-mwJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hoseSmiley" translatesAutoresizingMaskIntoConstraints="NO" id="b0Z-bV-D0A">
+                                                    <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="60" id="bRs-IU-pJN"/>
+                                                        <constraint firstAttribute="height" constant="60" id="lPy-Ju-9JK"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBL-sH-Dsn">
+                                                    <rect key="frame" x="68" y="32" width="299" height="18"/>
+                                                    <fontDescription key="fontDescription" name="Gibson-Light" family="Gibson" pointSize="18"/>
+                                                    <color key="textColor" red="0.20000000000000001" green="0.3803921569" blue="0.49019607840000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0AJ-Nk-bAi">
+                                                    <rect key="frame" x="68" y="8" width="299" height="18"/>
+                                                    <fontDescription key="fontDescription" name="Gibson-Regular" family="Gibson" pointSize="18"/>
+                                                    <color key="textColor" red="0.20000000000000001" green="0.3803921569" blue="0.49019607840000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="0AJ-Nk-bAi" firstAttribute="leading" secondItem="b0Z-bV-D0A" secondAttribute="trailing" constant="8" id="7ua-sO-dGp"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="0AJ-Nk-bAi" secondAttribute="trailing" id="CzU-WL-ska"/>
+                                                <constraint firstItem="b0Z-bV-D0A" firstAttribute="leading" secondItem="UTf-IT-mwJ" secondAttribute="leading" id="FUy-RP-xMR"/>
+                                                <constraint firstItem="gBL-sH-Dsn" firstAttribute="leading" secondItem="0AJ-Nk-bAi" secondAttribute="leading" id="MuH-Zk-qbC"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="b0Z-bV-D0A" secondAttribute="bottom" id="OQE-Dv-g5N"/>
+                                                <constraint firstItem="gBL-sH-Dsn" firstAttribute="trailing" secondItem="0AJ-Nk-bAi" secondAttribute="trailing" id="VMW-i8-UBt"/>
+                                                <constraint firstAttribute="top" secondItem="0AJ-Nk-bAi" secondAttribute="top" constant="-8" id="cXZ-MI-Z1C"/>
+                                                <constraint firstItem="b0Z-bV-D0A" firstAttribute="top" secondItem="UTf-IT-mwJ" secondAttribute="top" id="eYS-gT-ks1"/>
+                                                <constraint firstItem="gBL-sH-Dsn" firstAttribute="top" secondItem="0AJ-Nk-bAi" secondAttribute="bottom" constant="6" id="lpx-pf-GgT"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="gBL-sH-Dsn" secondAttribute="bottom" constant="8" id="xr8-V9-Y8i"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="detailsLabel" destination="gBL-sH-Dsn" id="1mK-nO-DUC"/>
+                                            <outlet property="scheduledTimeLabel" destination="0AJ-Nk-bAi" id="vV1-7I-8ot"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="2qL-KG-I3V" id="ku7-F1-p0Y"/>
+                                    <outlet property="delegate" destination="2qL-KG-I3V" id="ByL-Ve-AoF"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="C7l-DM-8UX" firstAttribute="top" secondItem="kDQ-hn-K4h" secondAttribute="top" id="4Io-En-CQD"/>
+                            <constraint firstAttribute="trailing" secondItem="C7l-DM-8UX" secondAttribute="trailing" id="7Yy-03-gRr"/>
+                            <constraint firstItem="C7l-DM-8UX" firstAttribute="leading" secondItem="kDQ-hn-K4h" secondAttribute="leading" id="Lad-Ew-rCh"/>
+                            <constraint firstItem="C7l-DM-8UX" firstAttribute="bottom" secondItem="2x8-Ex-HcX" secondAttribute="top" id="mnT-aC-S8a"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="C7l-DM-8UX" id="foK-tz-9sq"/>
+                        <segue destination="Tsh-u2-eUD" kind="show" identifier="toCancelWash" id="p0d-wM-y4G"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xy9-fH-Y7T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="109.59999999999999" y="127.28635682158921"/>
+        </scene>
+        <!--CancelledWashViewController-->
+        <scene sceneID="1JG-aY-wZI">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Dashboard" referencedIdentifier="CancelledWashViewController" id="Tsh-u2-eUD" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jhs-se-2Bh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="772" y="127"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="hoseSmiley" width="99" height="204"/>
+    </resources>
+</document>

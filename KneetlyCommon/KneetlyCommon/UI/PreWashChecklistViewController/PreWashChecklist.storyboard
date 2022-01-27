@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="jDt-JE-JZH">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gibson-Light.otf">
+            <string>Gibson-Light</string>
+        </array>
+        <array key="Gibson.otf">
+            <string>Gibson-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Pre Wash Checklist View Controller-->
+        <scene sceneID="KaT-h0-loL">
+            <objects>
+                <viewController storyboardIdentifier="PreWashChecklistViewController" id="jDt-JE-JZH" customClass="PreWashChecklistViewController" customModule="KneetlyCommon" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7Vc-8c-Id7"/>
+                        <viewControllerLayoutGuide type="bottom" id="AzM-UX-fku"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5da-gI-SDv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="pre-wash check" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BTo-l6-oaL">
+                                <rect key="frame" x="16" y="28" width="343" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="APw-VG-ZV1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Gibson-Regular" family="Gibson" pointSize="20"/>
+                                <color key="textColor" red="0.015686274510000001" green="0.22352941179999999" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xN3-MZ-04w">
+                                <rect key="frame" x="10" y="62" width="355" height="85"/>
+                                <string key="text">Tap on the relevant section of the car below to record any pre-existing damage. When finished, tap submit and the washer will confirm. The washer may add any additional damage they find (which you must confirm before wash can begin).</string>
+                                <fontDescription key="fontDescription" name="Gibson-Light" family="Gibson" pointSize="17"/>
+                                <color key="textColor" red="0.015686274510000001" green="0.22352941179999999" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="carDamage" translatesAutoresizingMaskIntoConstraints="NO" id="wYX-dG-VRF" customClass="DamagesView" customModule="KneetlyCommon" customModuleProvider="target">
+                                <rect key="frame" x="54" y="155" width="267" height="402"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="wYX-dG-VRF" secondAttribute="height" multiplier="502:755" id="c2M-i3-sAq"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIC-tl-RIH" customClass="KneetlyButton" customModule="KneetlyCommon">
+                                <rect key="frame" x="157" y="568" width="68" height="34"/>
+                                <fontDescription key="fontDescription" name="Gibson-Light" family="Gibson" pointSize="22"/>
+                                <color key="tintColor" red="0.28235294119999998" green="0.98431372549999996" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="confirm">
+                                    <color key="titleColor" red="0.28235294119999998" green="0.98431372549999996" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionButtonWasTappedWithSender:" destination="jDt-JE-JZH" eventType="touchUpInside" id="zkq-s5-DQ7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QKu-mV-G1I">
+                                <rect key="frame" x="284" y="155" width="75" height="21"/>
+                                <color key="backgroundColor" red="0.57647061349999995" green="0.65882354970000001" blue="0.71372550729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="FOg-K3-i8g"/>
+                                    <constraint firstAttribute="height" constant="21" id="vOd-J4-iSy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Gibson-Light" family="Gibson" pointSize="17"/>
+                                <state key="normal" title="interior">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addInteriorDamageWithSender:" destination="jDt-JE-JZH" eventType="touchUpInside" id="Cc7-Ji-7Rd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="xN3-MZ-04w" secondAttribute="trailing" constant="10" id="2yD-Nh-hgV"/>
+                            <constraint firstItem="AzM-UX-fku" firstAttribute="top" secondItem="aIC-tl-RIH" secondAttribute="bottom" constant="16" id="398-pI-bJH"/>
+                            <constraint firstAttribute="trailing" secondItem="BTo-l6-oaL" secondAttribute="trailing" constant="16" id="3hL-8w-8iP"/>
+                            <constraint firstItem="BTo-l6-oaL" firstAttribute="top" secondItem="7Vc-8c-Id7" secondAttribute="bottom" constant="8" id="42N-87-3NO"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="wYX-dG-VRF" secondAttribute="trailing" constant="10" id="95d-Qa-Hy4"/>
+                            <constraint firstAttribute="trailing" secondItem="QKu-mV-G1I" secondAttribute="trailing" constant="16" id="BzA-iD-ERW"/>
+                            <constraint firstItem="wYX-dG-VRF" firstAttribute="centerX" secondItem="5da-gI-SDv" secondAttribute="centerX" id="Gkz-et-kha"/>
+                            <constraint firstItem="wYX-dG-VRF" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="5da-gI-SDv" secondAttribute="leading" constant="10" id="Pfw-W7-0FH"/>
+                            <constraint firstItem="aIC-tl-RIH" firstAttribute="top" secondItem="wYX-dG-VRF" secondAttribute="bottom" constant="11" id="UKU-C7-aEZ"/>
+                            <constraint firstItem="xN3-MZ-04w" firstAttribute="top" secondItem="BTo-l6-oaL" secondAttribute="bottom" constant="8" id="Xbu-bh-b1I"/>
+                            <constraint firstItem="aIC-tl-RIH" firstAttribute="centerX" secondItem="5da-gI-SDv" secondAttribute="centerX" constant="3.5" id="XeQ-Og-hWI"/>
+                            <constraint firstItem="xN3-MZ-04w" firstAttribute="centerX" secondItem="5da-gI-SDv" secondAttribute="centerX" id="be8-uu-FiB"/>
+                            <constraint firstItem="wYX-dG-VRF" firstAttribute="top" secondItem="xN3-MZ-04w" secondAttribute="bottom" constant="8" id="g75-Bf-FP7"/>
+                            <constraint firstItem="QKu-mV-G1I" firstAttribute="top" secondItem="wYX-dG-VRF" secondAttribute="top" id="hsH-F0-icA"/>
+                            <constraint firstItem="BTo-l6-oaL" firstAttribute="leading" secondItem="5da-gI-SDv" secondAttribute="leading" constant="16" id="moW-pq-pDM"/>
+                            <constraint firstItem="xN3-MZ-04w" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="5da-gI-SDv" secondAttribute="leading" constant="10" id="p70-4i-PlP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="bfR-IB-vPM">
+                        <barButtonItem key="backBarButtonItem" title="back" id="IDE-OR-5Jh"/>
+                    </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <connections>
+                        <outlet property="actionButton" destination="aIC-tl-RIH" id="wpQ-B3-hWr"/>
+                        <outlet property="damagesView" destination="wYX-dG-VRF" id="PNY-eQ-Vsp"/>
+                        <outlet property="interriorDamageButton" destination="QKu-mV-G1I" id="jOa-Jh-Agf"/>
+                        <segue destination="XsO-QQ-lON" kind="show" identifier="toDamageDetails" id="Gkh-1M-SVO"/>
+                        <segue destination="rLK-g7-lFt" kind="show" identifier="toWashInProgress" id="cdF-qN-4NH"/>
+                        <segue destination="3dY-er-Uku" kind="show" identifier="toWashInProgressWashers" id="t0e-Qy-msi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hSu-By-2ZY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5399" y="-457"/>
+        </scene>
+        <!--Wash-->
+        <scene sceneID="FUe-Zs-qA3">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Wash" bundleIdentifier="com.beitsafe.KneetlyUser" id="rLK-g7-lFt" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kSH-nj-tcc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5398" y="-10"/>
+        </scene>
+        <!--WashProcess-->
+        <scene sceneID="tiV-rJ-obZ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="WashProcess" bundleIdentifier="com.beitsafe.KneetlyWashers" id="3dY-er-Uku" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T0o-FQ-O3V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5566" y="-10"/>
+        </scene>
+        <!--Damage Details View Controller-->
+        <scene sceneID="jjV-xQ-nBV">
+            <objects>
+                <viewController storyboardIdentifier="KneetlyCommon.DamageDetailsViewController" id="XsO-QQ-lON" customClass="DamageDetailsViewController" customModule="KneetlyCommon" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RkB-HM-rp8"/>
+                        <viewControllerLayoutGuide type="bottom" id="pfm-7t-8lT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Xhh-dg-ian">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="pre-wash check" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gtK-fP-2ij">
+                                <rect key="frame" x="16" y="28" width="343" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="mnk-Kj-DX0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Gibson-Regular" family="Gibson" pointSize="20"/>
+                                <color key="textColor" red="0.015686274510000001" green="0.22352941179999999" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wY5-kU-vRR">
+                                <rect key="frame" x="10" y="62" width="355" height="51"/>
+                                <string key="text">Please take a photo of the damage and add it here. If the damage is repaired at a later date, you can remove the damage from this screen as well. </string>
+                                <fontDescription key="fontDescription" name="Gibson-Light" family="Gibson" pointSize="17"/>
+                                <color key="textColor" red="0.015686274510000001" green="0.22352941179999999" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2tg-02-Z1Z" customClass="KneetlyButton" customModule="KneetlyCommon" customModuleProvider="target">
+                                <rect key="frame" x="163" y="516" width="49" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="K5W-s5-IuP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Gibson-Light" family="Gibson" pointSize="27"/>
+                                <color key="tintColor" red="0.28235294119999998" green="0.98431372549999996" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="save">
+                                    <color key="titleColor" red="0.2156862745" green="0.90588235289999997" blue="0.67450980390000004" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveDamageWithSender:" destination="XsO-QQ-lON" eventType="touchUpInside" id="hir-8e-fcF"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="j7O-Vq-yHm" customClass="KMPlaceholderTextView" customModule="KMPlaceholderTextView">
+                                <rect key="frame" x="44" y="352" width="287" height="157"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="fvW-ca-9cX"/>
+                                </constraints>
+                                <color key="textColor" red="0.20000000000000001" green="0.3803921569" blue="0.49019607840000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Gibson-Light" family="Gibson" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="damage details"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" red="0.57647058819999997" green="0.6588235294" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GJg-7G-1Qb" customClass="KneetlyButton" customModule="KneetlyCommon" customModuleProvider="target">
+                                <rect key="frame" x="131" y="568" width="113" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="tJ9-gp-G0M"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Gibson-Light" family="Gibson" pointSize="17"/>
+                                <color key="tintColor" red="1" green="0.36078431370000003" blue="0.058823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="remove damage">
+                                    <color key="titleColor" red="0.99215686270000003" green="0.53725490200000003" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="removeWithSender:" destination="XsO-QQ-lON" eventType="touchUpInside" id="LCn-Xc-DZW"/>
+                                </connections>
+                            </button>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0ng-Qm-qbl">
+                                <rect key="frame" x="87.5" y="133" width="200" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="add an image" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vHW-ZD-Dg5">
+                                        <rect key="frame" x="23.5" y="80.5" width="152" height="39"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="39" id="Mfa-HL-52O"/>
+                                            <constraint firstAttribute="width" constant="152" id="clJ-Ed-F4e"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Gibson-Light" family="Gibson" pointSize="22"/>
+                                        <color key="textColor" red="0.28235294119999998" green="0.98431372549999996" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="awv-Im-4VL">
+                                        <rect key="frame" x="5" y="5" width="190" height="190"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTn-Bh-14B">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                        <fontDescription key="fontDescription" name="Gibson-Light" family="Gibson" pointSize="26"/>
+                                        <color key="tintColor" red="0.28235294119999998" green="0.98431372549999996" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.28235294119999998" green="0.98431372549999996" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="addImageWithSender:" destination="XsO-QQ-lON" eventType="touchUpInside" id="AWF-vp-hXg"/>
+                                        </connections>
+                                    </button>
+                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="oiD-wQ-V2Q">
+                                        <rect key="frame" x="89.5" y="89.5" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="6df-O8-hqO"/>
+                                            <constraint firstAttribute="width" constant="20" id="bRs-ea-M5q"/>
+                                        </constraints>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="oiD-wQ-V2Q" firstAttribute="centerX" secondItem="0ng-Qm-qbl" secondAttribute="centerX" id="1s7-ai-YX0"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="5nf-66-dEd"/>
+                                    <constraint firstAttribute="width" secondItem="0ng-Qm-qbl" secondAttribute="height" multiplier="1:1" id="A7L-M3-dcG"/>
+                                    <constraint firstAttribute="bottom" secondItem="PTn-Bh-14B" secondAttribute="bottom" id="BwG-eT-cBi"/>
+                                    <constraint firstItem="awv-Im-4VL" firstAttribute="top" secondItem="0ng-Qm-qbl" secondAttribute="top" constant="5" id="CkG-Iw-Rcs"/>
+                                    <constraint firstItem="awv-Im-4VL" firstAttribute="leading" secondItem="0ng-Qm-qbl" secondAttribute="leading" constant="5" id="MR4-Z4-YhB"/>
+                                    <constraint firstAttribute="trailing" secondItem="PTn-Bh-14B" secondAttribute="trailing" id="Ofc-xi-1Rl"/>
+                                    <constraint firstAttribute="bottom" secondItem="awv-Im-4VL" secondAttribute="bottom" constant="5" id="PxO-6j-vFk"/>
+                                    <constraint firstItem="vHW-ZD-Dg5" firstAttribute="centerY" secondItem="0ng-Qm-qbl" secondAttribute="centerY" id="TWd-rR-lVO"/>
+                                    <constraint firstAttribute="bottom" secondItem="PTn-Bh-14B" secondAttribute="bottom" id="X2B-si-elF"/>
+                                    <constraint firstAttribute="trailing" secondItem="awv-Im-4VL" secondAttribute="trailing" constant="5" id="Xqx-ih-DHI"/>
+                                    <constraint firstItem="PTn-Bh-14B" firstAttribute="top" secondItem="0ng-Qm-qbl" secondAttribute="top" id="aXP-vb-YyU"/>
+                                    <constraint firstItem="PTn-Bh-14B" firstAttribute="leading" secondItem="0ng-Qm-qbl" secondAttribute="leading" id="eYI-e4-d0u"/>
+                                    <constraint firstItem="oiD-wQ-V2Q" firstAttribute="centerY" secondItem="0ng-Qm-qbl" secondAttribute="centerY" id="iD8-Ba-QTP"/>
+                                    <constraint firstItem="PTn-Bh-14B" firstAttribute="leading" secondItem="0ng-Qm-qbl" secondAttribute="leading" id="l6x-AR-q8M"/>
+                                    <constraint firstAttribute="trailing" secondItem="PTn-Bh-14B" secondAttribute="trailing" id="lZp-ym-N1k"/>
+                                    <constraint firstItem="vHW-ZD-Dg5" firstAttribute="centerX" secondItem="0ng-Qm-qbl" secondAttribute="centerX" id="tBV-ZQ-NI1"/>
+                                    <constraint firstItem="PTn-Bh-14B" firstAttribute="top" secondItem="0ng-Qm-qbl" secondAttribute="top" id="xQ3-FL-qY3"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.28235294119999998" green="0.98431372549999996" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2tg-02-Z1Z" firstAttribute="top" secondItem="j7O-Vq-yHm" secondAttribute="bottom" constant="7" id="1Wk-Mz-E8l"/>
+                            <constraint firstItem="j7O-Vq-yHm" firstAttribute="leading" secondItem="Xhh-dg-ian" secondAttribute="leadingMargin" constant="28" id="2VC-I4-ITj"/>
+                            <constraint firstAttribute="trailing" secondItem="gtK-fP-2ij" secondAttribute="trailing" constant="16" id="2gF-Ig-CMd"/>
+                            <constraint firstItem="GJg-7G-1Qb" firstAttribute="centerX" secondItem="Xhh-dg-ian" secondAttribute="centerX" id="8eN-zZ-3uF"/>
+                            <constraint firstItem="GJg-7G-1Qb" firstAttribute="top" secondItem="2tg-02-Z1Z" secondAttribute="bottom" constant="12" id="AQF-Ar-JEX"/>
+                            <constraint firstItem="wY5-kU-vRR" firstAttribute="leading" secondItem="Xhh-dg-ian" secondAttribute="leading" constant="10" id="Exd-bF-j2D"/>
+                            <constraint firstItem="gtK-fP-2ij" firstAttribute="top" secondItem="RkB-HM-rp8" secondAttribute="bottom" constant="8" id="OTD-hX-JOC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="j7O-Vq-yHm" secondAttribute="trailing" constant="28" id="OTc-wn-gSg"/>
+                            <constraint firstItem="2tg-02-Z1Z" firstAttribute="centerX" secondItem="Xhh-dg-ian" secondAttribute="centerX" id="T0R-VX-J6q"/>
+                            <constraint firstItem="pfm-7t-8lT" firstAttribute="top" secondItem="GJg-7G-1Qb" secondAttribute="bottom" constant="20" id="WOn-9A-Njs"/>
+                            <constraint firstItem="0ng-Qm-qbl" firstAttribute="centerX" secondItem="Xhh-dg-ian" secondAttribute="centerX" id="c8F-2R-kwI"/>
+                            <constraint firstItem="0ng-Qm-qbl" firstAttribute="top" secondItem="wY5-kU-vRR" secondAttribute="bottom" constant="20" id="kGL-wb-oQb"/>
+                            <constraint firstItem="gtK-fP-2ij" firstAttribute="leading" secondItem="Xhh-dg-ian" secondAttribute="leading" constant="16" id="r9u-jQ-lFV"/>
+                            <constraint firstItem="wY5-kU-vRR" firstAttribute="top" secondItem="gtK-fP-2ij" secondAttribute="bottom" constant="8" id="saw-Ob-SO0"/>
+                            <constraint firstAttribute="trailing" secondItem="wY5-kU-vRR" secondAttribute="trailing" constant="10" id="u7o-AW-kcT"/>
+                            <constraint firstItem="j7O-Vq-yHm" firstAttribute="top" secondItem="0ng-Qm-qbl" secondAttribute="bottom" constant="19" id="wba-Cf-5NV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="oiD-wQ-V2Q" id="RK2-Ar-vll"/>
+                        <outlet property="damageDescription" destination="j7O-Vq-yHm" id="b0W-ec-ekO"/>
+                        <outlet property="damageImage" destination="awv-Im-4VL" id="AUY-E8-UgY"/>
+                        <outlet property="removeButton" destination="GJg-7G-1Qb" id="Vzz-Ze-gAz"/>
+                        <outlet property="saveButton" destination="2tg-02-Z1Z" id="gc5-iL-iWF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H13-4Y-KJc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6260" y="-457.42128935532236"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="carDamage" width="501" height="754"/>
+    </resources>
+</document>

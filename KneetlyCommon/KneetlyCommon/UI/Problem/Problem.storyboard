@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5QA-09-IqJ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gibson-Light.otf">
+            <string>Gibson-Light</string>
+        </array>
+        <array key="Gibson.otf">
+            <string>Gibson-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Problem View Controller-->
+        <scene sceneID="v0A-M2-FQ2">
+            <objects>
+                <viewController storyboardIdentifier="ProblemViewController" id="5QA-09-IqJ" customClass="ProblemViewController" customModule="KneetlyCommon" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="37k-6i-92L"/>
+                        <viewControllerLayoutGuide type="bottom" id="8Ra-2N-MoN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QRJ-h1-oWI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="what's the problem?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tJm-yf-bob">
+                                <rect key="frame" x="16" y="26" width="343" height="17"/>
+                                <fontDescription key="fontDescription" name="Gibson-Regular" family="Gibson" pointSize="17"/>
+                                <color key="textColor" red="0.45882352939999999" green="0.70588235290000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedTextKey" value="problems.what-s-the-problem-label.text"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GX2-Ns-C4m">
+                                <rect key="frame" x="171" y="69" width="34" height="22"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FFG-ra-4LI">
+                                        <rect key="frame" x="0.0" y="11" width="0.0" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="Gibson-Light" family="Gibson" pointSize="21"/>
+                                        <color key="textColor" red="0.20000000000000001" green="0.3803921569" blue="0.49019607840000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circleArrowDownBlue" translatesAutoresizingMaskIntoConstraints="NO" id="vkI-Uf-Q8B">
+                                        <rect key="frame" x="12" y="0.0" width="22" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="22" id="XOK-P5-QQL"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="vkI-Uf-Q8B" secondAttribute="trailing" id="6aG-mG-cov"/>
+                                    <constraint firstAttribute="bottom" secondItem="vkI-Uf-Q8B" secondAttribute="bottom" id="LyS-Qt-Thr"/>
+                                    <constraint firstItem="FFG-ra-4LI" firstAttribute="centerY" secondItem="vkI-Uf-Q8B" secondAttribute="centerY" id="fJe-fo-Tbn"/>
+                                    <constraint firstItem="FFG-ra-4LI" firstAttribute="leading" secondItem="GX2-Ns-C4m" secondAttribute="leading" id="nH6-xm-Y5s"/>
+                                    <constraint firstItem="vkI-Uf-Q8B" firstAttribute="leading" secondItem="FFG-ra-4LI" secondAttribute="trailing" constant="12" id="sQR-cL-8E0"/>
+                                    <constraint firstItem="vkI-Uf-Q8B" firstAttribute="top" secondItem="GX2-Ns-C4m" secondAttribute="top" id="zzN-yV-nm9"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="OFu-LH-YoY" appends="YES" id="HGo-PM-3ds"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="saI-mJ-kDx">
+                                <rect key="frame" x="151" y="99" width="74" height="1"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="2fu-Nd-Kdg"/>
+                                </constraints>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0St-SL-7Fw" customClass="KMPlaceholderTextView" customModule="KMPlaceholderTextView">
+                                <rect key="frame" x="48" y="108" width="280" height="446"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="jVt-ym-U5h"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Gibson-Light" family="Gibson" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="add your comments"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" red="0.59999999999999998" green="0.67843137249999996" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedPlaceholderKey" value="problems.comments-text-view.placeholder"/>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gqA-nA-ANq" customClass="KneetlyButton" customModule="KneetlyCommon">
+                                <rect key="frame" x="164" y="580" width="47" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="OFR-bu-vWw"/>
+                                </constraints>
+                                <color key="tintColor" red="0.28235294119999998" green="0.98431372549999996" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="submit"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="29"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="horizontalInsets">
+                                        <real key="value" value="46"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.28235294119999998" green="0.98431372549999996" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedTitleKey" value="problems.submit-button.title"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="submit" destination="5QA-09-IqJ" eventType="touchUpInside" id="fud-UD-mQd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kFH-13-CiT" customClass="KneetlyButton" customModule="KneetlyCommon">
+                                <rect key="frame" x="173" y="630" width="30" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="4Rh-yU-pXB"/>
+                                </constraints>
+                                <color key="tintColor" red="0.45882352939999999" green="0.70588235290000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.45882352939999999" green="0.70588235290000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="horizontalInsets">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.45882352939999999" green="0.70588235290000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedTitleKey" value="call-kneetly-button.title"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="13.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="callSupport:" destination="5QA-09-IqJ" eventType="touchUpInside" id="wgt-L2-cV7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="saI-mJ-kDx" firstAttribute="trailing" secondItem="GX2-Ns-C4m" secondAttribute="trailing" constant="20" id="6oG-n1-wlP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tJm-yf-bob" secondAttribute="trailing" id="9qN-2f-sbv"/>
+                            <constraint firstItem="gqA-nA-ANq" firstAttribute="top" secondItem="0St-SL-7Fw" secondAttribute="bottom" constant="26" id="Asj-Uv-2UK"/>
+                            <constraint firstItem="gqA-nA-ANq" firstAttribute="centerX" secondItem="QRJ-h1-oWI" secondAttribute="centerX" id="E9N-gH-vqm"/>
+                            <constraint firstItem="tJm-yf-bob" firstAttribute="top" secondItem="QRJ-h1-oWI" secondAttribute="top" constant="26" id="HBC-U4-Bdo"/>
+                            <constraint firstItem="GX2-Ns-C4m" firstAttribute="centerX" secondItem="tJm-yf-bob" secondAttribute="centerX" id="Oay-XK-MCx"/>
+                            <constraint firstItem="tJm-yf-bob" firstAttribute="leading" secondItem="QRJ-h1-oWI" secondAttribute="leadingMargin" id="YsK-Gs-ENo"/>
+                            <constraint firstItem="0St-SL-7Fw" firstAttribute="top" secondItem="saI-mJ-kDx" secondAttribute="bottom" constant="8" id="fUa-Zd-oh9"/>
+                            <constraint firstItem="saI-mJ-kDx" firstAttribute="top" secondItem="GX2-Ns-C4m" secondAttribute="bottom" constant="8" id="kZx-Kq-jHX"/>
+                            <constraint firstItem="GX2-Ns-C4m" firstAttribute="top" secondItem="tJm-yf-bob" secondAttribute="bottom" constant="26" id="lsE-ra-X5R"/>
+                            <constraint firstItem="kFH-13-CiT" firstAttribute="centerX" secondItem="QRJ-h1-oWI" secondAttribute="centerX" id="mSE-7A-THN"/>
+                            <constraint firstItem="saI-mJ-kDx" firstAttribute="leading" secondItem="GX2-Ns-C4m" secondAttribute="leading" constant="-20" id="oUs-Sf-gnz"/>
+                            <constraint firstItem="0St-SL-7Fw" firstAttribute="centerX" secondItem="GX2-Ns-C4m" secondAttribute="centerX" id="qP8-Sm-naL"/>
+                            <constraint firstAttribute="bottom" secondItem="kFH-13-CiT" secondAttribute="bottom" constant="10" id="xQk-CJ-47U"/>
+                            <constraint firstItem="kFH-13-CiT" firstAttribute="top" secondItem="gqA-nA-ANq" secondAttribute="bottom" constant="10" id="zRV-cb-2On"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="commentsTextView" destination="0St-SL-7Fw" id="9Xy-jW-eg5"/>
+                        <outlet property="reasonLabel" destination="FFG-ra-4LI" id="Dbj-C2-jqF"/>
+                        <outlet property="submitButton" destination="gqA-nA-ANq" id="uRP-lQ-acR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Aw-Fa-2hH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="OFu-LH-YoY">
+                    <connections>
+                        <action selector="showReasons:" destination="5QA-09-IqJ" id="ywm-yN-uGV"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="3593" y="366"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="circleArrowDownBlue" width="22" height="22"/>
+    </resources>
+</document>

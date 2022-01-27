@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Tmz-zw-S0w">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gibson-Light.otf">
+            <string>Gibson-Light</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Badges View Controller-->
+        <scene sceneID="Ocl-jl-lwF">
+            <objects>
+                <viewController storyboardIdentifier="BadgesViewController" id="Tmz-zw-S0w" customClass="BadgesViewController" customModule="KneetlyCommon" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bY8-S9-9cl"/>
+                        <viewControllerLayoutGuide type="bottom" id="wtP-Qi-ru2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wsL-YK-NAX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="p7O-rv-InC">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="BadgeCell" rowHeight="73" id="BSg-Zu-QWs" customClass="BadgeCell" customModule="KneetlyCommon" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="73"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BSg-Zu-QWs" id="EbM-Yb-bmh">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="72.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spongeDeadpan" translatesAutoresizingMaskIntoConstraints="NO" id="Oh7-dw-NeS">
+                                                    <rect key="frame" x="8" y="8" width="82" height="56"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="82" id="T4Q-e0-AUG"/>
+                                                        <constraint firstAttribute="height" constant="56" id="sZ6-AR-IcI"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Badge" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ka-I0-98W">
+                                                    <rect key="frame" x="98" y="8" width="269" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="6GN-xB-4sw"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Gibson-Light" family="Gibson" pointSize="18"/>
+                                                    <color key="textColor" red="0.20000000000000001" green="0.3803921569" blue="0.49019607840000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KLi-Mp-RCl">
+                                                    <rect key="frame" x="98" y="36" width="269" height="15"/>
+                                                    <fontDescription key="fontDescription" name="Gibson-Light" family="Gibson" pointSize="15"/>
+                                                    <color key="textColor" red="0.59999999999999998" green="0.67843137249999996" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cm3-hc-oEa">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="72.5"/>
+                                                    <color key="backgroundColor" white="1" alpha="0.60394370719178081" colorSpace="calibratedWhite"/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="cm3-hc-oEa" secondAttribute="bottom" id="0HX-Ub-QoH"/>
+                                                <constraint firstItem="0ka-I0-98W" firstAttribute="leading" secondItem="KLi-Mp-RCl" secondAttribute="leading" id="3yX-DX-FMg"/>
+                                                <constraint firstItem="Oh7-dw-NeS" firstAttribute="top" secondItem="0ka-I0-98W" secondAttribute="top" id="Iva-O6-GJT"/>
+                                                <constraint firstItem="cm3-hc-oEa" firstAttribute="leading" secondItem="EbM-Yb-bmh" secondAttribute="leading" id="K1e-D6-mjN"/>
+                                                <constraint firstItem="Oh7-dw-NeS" firstAttribute="leading" secondItem="EbM-Yb-bmh" secondAttribute="leadingMargin" id="QlN-pw-XZP"/>
+                                                <constraint firstItem="KLi-Mp-RCl" firstAttribute="top" secondItem="0ka-I0-98W" secondAttribute="bottom" constant="8" symbolic="YES" id="RD5-se-T7N"/>
+                                                <constraint firstItem="cm3-hc-oEa" firstAttribute="top" secondItem="EbM-Yb-bmh" secondAttribute="top" id="S7v-6D-v1a"/>
+                                                <constraint firstItem="Oh7-dw-NeS" firstAttribute="centerY" secondItem="EbM-Yb-bmh" secondAttribute="centerY" id="TxK-gp-7jH"/>
+                                                <constraint firstAttribute="trailing" secondItem="cm3-hc-oEa" secondAttribute="trailing" id="aC4-JO-E2Z"/>
+                                                <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="KLi-Mp-RCl" secondAttribute="bottom" constant="8" id="dV3-BH-hCK"/>
+                                                <constraint firstItem="0ka-I0-98W" firstAttribute="trailing" secondItem="KLi-Mp-RCl" secondAttribute="trailing" id="iy9-IU-qcI"/>
+                                                <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="Oh7-dw-NeS" secondAttribute="bottom" id="ng0-VX-GvY"/>
+                                                <constraint firstItem="0ka-I0-98W" firstAttribute="trailing" secondItem="EbM-Yb-bmh" secondAttribute="trailingMargin" id="tEb-0j-ZZD"/>
+                                                <constraint firstItem="0ka-I0-98W" firstAttribute="leading" secondItem="Oh7-dw-NeS" secondAttribute="trailing" constant="8" symbolic="YES" id="v3g-1Y-HWb"/>
+                                                <constraint firstItem="Oh7-dw-NeS" firstAttribute="top" secondItem="EbM-Yb-bmh" secondAttribute="topMargin" id="yTk-WC-ORw"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="badgeImageView" destination="Oh7-dw-NeS" id="Fcx-tg-BPk"/>
+                                            <outlet property="descriptionLabel" destination="KLi-Mp-RCl" id="mG6-3Z-6Ys"/>
+                                            <outlet property="notAchievedView" destination="cm3-hc-oEa" id="zDO-wn-bOq"/>
+                                            <outlet property="titleLabel" destination="0ka-I0-98W" id="LSe-w6-HRf"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Tmz-zw-S0w" id="U85-9G-sAv"/>
+                                    <outlet property="delegate" destination="Tmz-zw-S0w" id="MWt-9z-br8"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="p7O-rv-InC" secondAttribute="trailing" id="1TC-hv-GYr"/>
+                            <constraint firstAttribute="bottom" secondItem="p7O-rv-InC" secondAttribute="bottom" id="Nq0-bK-W7D"/>
+                            <constraint firstItem="p7O-rv-InC" firstAttribute="leading" secondItem="wsL-YK-NAX" secondAttribute="leading" id="PJe-jO-7aF"/>
+                            <constraint firstItem="p7O-rv-InC" firstAttribute="top" secondItem="wsL-YK-NAX" secondAttribute="top" id="Wdm-8r-aTt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="p7O-rv-InC" id="dz9-Km-aO4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2kA-4K-ArK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4220" y="-2864.617691154423"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="spongeDeadpan" width="61" height="111"/>
+    </resources>
+</document>

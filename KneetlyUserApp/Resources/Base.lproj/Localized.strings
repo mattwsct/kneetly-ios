@@ -1,0 +1,161 @@
+/* 
+  Localized.strings
+  KneetlyUserApp
+
+  Created by Matt Westcott on 01.12.16.
+  Copyright © 2016 Be It Safe Pty Ltd. All rights reserved.
+*/
+
+// MARK: - Common
+
+"common.date-formatter-locale" = "en_US_POSIX";
+"common.online-string" = "Online now";
+"common.offline-string" = "Offline";
+"common.last-seen-string" = "Last seen";
+"common.retry" = "Retry";
+"common.cancel" = "Cancel";
+"common.close" = "Close";
+"common.loadData.error.unknown" = "There was a problem loading the information, please restart and try again";
+
+// MARK: - Storyboard
+
+"registration.accept-and-confirm-button.title" = "accept & confirm";
+"registration.payment.card-info-text-field.placeholder" = "tap to add the card";
+"registration.terms-and-conditions-label.text" = "TERMS & CONDITIONS";
+"registration.info-label.text" = "By tapping the button below, you agree to our Terms & Conditions.";
+"registration.info-label.clickable-part" = "Terms & Conditions";
+"registration.choose-avatar-label.text" = "choose your avatar (optional)";
+
+"dashboard.book-a-wash-button.title" = "book a wash";
+"dashboard.status-label.never-washed.text" = "never been washed";
+
+"interview.book-it-in-button.title" = "book it in";
+"interview.info-label.part1" = "I want to get my ";
+"interview.info-label.part2" = " washed ";
+"interview.info-label.part3" = ".\nThe washer will ";
+"interview.info-label.part4" = " and do a ";
+"interview.time.now" = "now";
+"interview.date-formatter.am-symbol" = "am";
+"interview.date-formatter.pm-symbol" = "pm";
+"interview.date-formatter.date-format" = "'on' MMMM, d 'at' h:mm a";
+"interview.booking-fee-label.text" = "$1 booking fee applies";
+
+"confirm-booking.where-is-your-car-waiting-for-wash.format" = "Where is your %@ waiting for its wash?";
+"confirm-booking.where-do-you-want-to-get-your-car-washed.format" = "Where do you want to get your %@ washed?";
+"confirm-booking.we-allocate-a-washer-nearby-label.text" = "We'll allocate a washer nearby for you to drop off your vehicle";
+"confirm-booking.car-location-label.text" = "CAR LOCATION";
+"confirm-booking.washer-rating.format" = "%@ ★";
+"confirm-booking.washer-time-drive.format" = " %@ drive";
+"confirm-booking.credit-card-label.text" = "CREDIT CARD";
+"confirm-booking.change-button.title" = "CHANGE";
+"confirm-booking.confirm-and-order.title" = "confirm & book";
+"confirm-booking.cancel-button.title" = "cancel";
+"confirm-booking.error.should-select-location" = "Please select location";
+"confirm-booking.default-car-name" = "car";
+"confirm-booking.location-storage-confirmation.text" = "To book your wash, Kneetly needs to store your current location. We’ll delete this when you’re done.\n\nIs that OK?";
+"confirm-booking.location-storage-confirmation.ok-button.title" = "yeah, sure";
+"confirm-booking.location-storage-confirmation.no-button.title" = "nope, i’m out";
+
+"search-for-washer.status-label.text" = "looking for washer";
+"search-for-washer.info-label.text" = "Feel free to use other apps while you wait, you’ll recieve  a notification when there’s an available washer nearby.";
+"search-for-washer.tip-label.text" = "Did you know: The busiest hours for washers are on Friday and Saturday afternoons (during sunny weather, of course)!";
+"search-for-washer.cancel-search-button.title" = "cancel search";
+
+"washer-found.washer-found-label.text" = "washer found!";
+"washer-found.confirm-button.title" = "confirm";
+"washer-found.cancel-button.title" = "cancel search";
+"washer-found.alert.title" = "Awesome, we've got your details!\n\nWe'll be in touch 30 minutes before you booked wash.";
+"washer-found.alert.ok-button" = "cool beans";
+"washer-found.alert.add-button" = "add to calendar";
+"washer-found.added-to-calendar-confirmation.message" = "Wash was added to calendar!";
+
+"no-washer-found.try-again-label.text" = "sorry no washer found,\ntry again later !";
+"no-washer-found.cancel-button.title" = "cancel search";
+
+"washer-unavailable.washer-unavailable-label.text" = "sorry washer unavailable,\nchoose another washer!";
+"washer-unavailable.choose-button.title" = "choose now";
+"washer-unavailable.cancel-button.title" = "cancel search";
+
+"washer-not-replied.washer-not-replied-label.text" = "sorry  your chosen washer\nhas not yet replied!";
+"washer-not-replied.keep-waiting-button.title" = "keep waiting";
+"washer-not-replied.choose-another-button.title" = "choose another washer";
+"washer-not-replied.cancel-button.title" = "cancel";
+
+"more.my-profile-button.text" = "my profile";
+"more.favourites-button.text" = "favourites";
+"more.badges-button.text" = "badges";
+"more.change-payment-button.text" = "change payment";
+"more.wash-tutorial-videos-button.text" = "wash tutorial videos";
+"more.wash-types-button.text" = "wash types";
+"more.refer-friends-button.text" = "refer friends";
+"more.faq-button.text" = "faq";
+"more.help-button.text" = "help";
+"more.logout-button.text" = "logout";
+"more.terms-and-conditions-button.text" = "terms and conditions";
+
+"review-washer.how-was-your-wash-experience-label.text" = "how was your wash experience?";
+"review-washer.comments-text-field.placeholder" = "comments (optional)";
+"review-washer.add-to-favorites-label.text" = "add to favorites";
+"review-washer.confirm-button.title" = "confirm";
+
+"favourites.rebooking-title-label.text" = "When rebooking, job will be offered to washer but if they are unavailable the job will be offered to another washer";
+"favourites.rebook-button.title" = "rebook";
+
+"wash-in-progress.wash-in-progress-label.text" = "wash in progress";
+"wash-in-progress.wash-info-label.text" = "Your %@ is being done by %@";
+"wash-in-progress.problems-button.title" = "problems?";
+
+"complete-wash.wash-completed-label.text" = "wash completed";
+"complete-wash.wash-info-label.text" = "Your %@ has been completed by %@";
+"complete-wash.review-washer-button.title" = "review washer";
+"complete-wash.problems-button.title" = "problems?";
+
+"problems.what-s-the-problem-label.text" = "what's the problem?";
+"problems.comments-text-view.placeholder" = "add your comments";
+"problems.submit-button.title" = "submit";
+
+"washer-incoming-or-waiting.pre-wash-check-button.title" = "pre-wash check";
+"washer-incoming-or-waiting.cancel-button.title" = "cancel search";
+
+"faq.title-label.text" = "FAQ";
+
+"terms-conditions.title-label.text" = "terms and conditions";
+
+"help.title-label.text" = "help";
+"help.comments-text-view.placeholder" = "write your comments here";
+"help.submit-button.title" = "submit";
+
+"payment-methods.add-button.title" = "Add payment method";
+"payment-methods.personal.section.title" = "Personal";
+"payment-methods.business.section.title" = "Business";
+
+"history.rebook-button.title" = "rebook";
+"history.cancel-action.title" = "Cancel";
+"history.table-view.scheduled-section.title" = "Scheduled";
+"history.table-view.completed-section.title" = "Previous";
+"history.time-label.at.title" = "at";
+
+"referral.title-label.text" = "Your referral code";
+"referral.facebook-button.title" = "Share on Facebook";
+"referral.twitter-button.title" = "Share on Twitter";
+"referral.iphone-button.title" = "Share on iPhone";
+"referral.message-label.text" = "Share Kneetly with friends and family to earn a free wash!";
+
+"vehicle.add-to-business.title" = "add to business";
+"vehicle.no-business.title" = "none";
+
+"storyboard.damages" = "PreWashChecklist";
+"bundle.common" = "com.beitsafe.KneetlyCommon";
+
+"booking.canceled.message" =  "Unfortunately the washer had to cancel the booking, please rebook your vehicle for another wash";
+
+"storyboard.booking" = "Booking";
+
+"calendar.location-of-wash" = "location of wash";
+
+"payment.declined.message" = "Oops your payment declined! Please choose a different card";
+
+"call-kneetly-button.title" = "call kneetly";
+
+"tutorial.continue-button.title" = "continue";
+"tutorial.description-label.text" = "Please finish watching the above\nvideos to continue to your dashboard";

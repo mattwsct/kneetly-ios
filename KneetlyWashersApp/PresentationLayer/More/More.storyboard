@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2DX-0N-vK1">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gibson-Light.otf">
+            <string>Gibson-Light</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Settings View Controller-->
+        <scene sceneID="QrM-BB-0y5">
+            <objects>
+                <viewController storyboardIdentifier="SettingsViewController" id="2DX-0N-vK1" customClass="SettingsViewController" customModule="KneetlyWashersApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vHH-L4-inq"/>
+                        <viewControllerLayoutGuide type="bottom" id="8aM-9S-bZv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Nvo-Se-Qah">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HHf-xQ-8rK">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TIy-Dv-tgx">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pr6-PO-yRb">
+                                                <rect key="frame" x="14" y="272" width="347" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="YxR-aO-Xno"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Gibson-Light" family="Gibson" pointSize="22"/>
+                                                <state key="normal" title="FAQ">
+                                                    <color key="titleColor" red="0.45882352939999999" green="0.70588235290000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedTitleKey" value="more.faq-button.text"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="YdO-vp-HXG" kind="show" identifier="toFAQ" id="zAX-B7-MEj"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AjN-v6-fEX">
+                                                <rect key="frame" x="14" y="242" width="347" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="9is-cE-ndq"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Gibson-Light" family="Gibson" pointSize="22"/>
+                                                <state key="normal" title="help">
+                                                    <color key="titleColor" red="0.45882352939999999" green="0.70588235290000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedTitleKey" value="more.help-button.text"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="K15-yy-2oh" kind="show" identifier="toHelp" id="jPp-EJ-ifu"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VoG-NU-rGP">
+                                                <rect key="frame" x="14" y="212" width="347" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="xbu-5t-QrT"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Gibson-Light" family="Gibson" pointSize="22"/>
+                                                <state key="normal" title="wash types">
+                                                    <color key="titleColor" red="0.45882352939999999" green="0.70588235290000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedTitleKey" value="more.wash-types-button.text"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="EkM-bY-g8B" kind="show" identifier="toWashTypes" id="sSc-9n-Y08"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PSe-eM-gHZ">
+                                                <rect key="frame" x="14" y="302" width="347" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="f5p-Lg-Eso"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Gibson-Light" family="Gibson" pointSize="22"/>
+                                                <state key="normal" title="terms and conditions">
+                                                    <color key="titleColor" red="0.45882352939999999" green="0.70588235290000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedTitleKey" value="more.terms-and-conditions-button.text"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="xb8-Rc-dSG" kind="show" identifier="toTermsConditions" id="yok-nK-9hA"/>
+                                                </connections>
+                                            </button>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bucketDeadpan" translatesAutoresizingMaskIntoConstraints="NO" id="GHw-jC-Pf1">
+                                                <rect key="frame" x="273" y="32" width="88" height="142"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="88" id="mKr-zy-vCS"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSV-WR-20N">
+                                                <rect key="frame" x="14" y="122" width="347" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="nBj-eR-ycY"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Gibson-Light" family="Gibson" pointSize="22"/>
+                                                <state key="normal" title="referral">
+                                                    <color key="titleColor" red="0.45882352939999999" green="0.70588235290000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedTitleKey" value="more.referral-button.text"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="H8Y-dY-wn3" kind="show" identifier="toReferral" id="JSp-fZ-YvO"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3bb-lM-s99">
+                                                <rect key="frame" x="14" y="62" width="347" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="hRY-GM-ax3"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Gibson-Light" family="Gibson" pointSize="22"/>
+                                                <state key="normal" title="badges">
+                                                    <color key="titleColor" red="0.45882352939999999" green="0.70588235290000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedTitleKey" value="more.badges-button.text"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="MIE-n9-Cib" kind="show" identifier="toBadges" id="vVc-Gh-mog"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TyO-KD-pUB">
+                                                <rect key="frame" x="14" y="92" width="347" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="DnB-h0-5Af"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Gibson-Light" family="Gibson" pointSize="22"/>
+                                                <state key="normal" title="favourited by">
+                                                    <color key="titleColor" red="0.45882352939999999" green="0.70588235290000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedTitleKey" value="more.favourited-by-button.text"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="XeI-Li-xWh" kind="show" identifier="toFavouritedBy" id="hD0-Ao-FJ0"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z1n-Kk-soc">
+                                                <rect key="frame" x="14" y="32" width="347" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="A1h-sm-DfN"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Gibson-Light" family="Gibson" pointSize="22"/>
+                                                <state key="normal" title="profile">
+                                                    <color key="titleColor" red="0.45882352939999999" green="0.70588235290000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedTitleKey" value="more.profile-button.text"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="YA7-AV-VQt" kind="show" identifier="toProfile" id="EeC-M0-j1O"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hbn-DJ-DM9">
+                                                <rect key="frame" x="14" y="332" width="347" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="ouk-pI-4xB"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Gibson-Light" family="Gibson" pointSize="22"/>
+                                                <state key="normal" title="payment info">
+                                                    <color key="titleColor" red="0.45882352939999999" green="0.70588235290000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedTitleKey" value="more.payment-info-button.text"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="ai4-vX-Jke" kind="show" identifier="toPaymentInformation" id="CYd-wf-Sux"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Jf-wp-aJs">
+                                                <rect key="frame" x="14" y="152" width="347" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="8ub-H0-v0I"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Gibson-Light" family="Gibson" pointSize="22"/>
+                                                <state key="normal" title="washing tutorials">
+                                                    <color key="titleColor" red="0.45882352939999999" green="0.70588235290000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedTitleKey" value="more.washing-tutorials-button.text"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="wfK-Ih-lk1" kind="show" identifier="toTutorials" id="bsC-VF-DsB"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="onC-Sh-3MG">
+                                                <rect key="frame" x="14" y="182" width="347" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="vzx-Lc-FIJ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Gibson-Light" family="Gibson" pointSize="22"/>
+                                                <state key="normal" title="washer guide">
+                                                    <color key="titleColor" red="0.45882352939999999" green="0.70588235290000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedTitleKey" value="more.washer-guide-button.text"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="washerGuideButtonTapped:" destination="2DX-0N-vK1" eventType="touchUpInside" id="5IW-3m-ggR"/>
+                                                </connections>
+                                            </button>
+                                            <imageView userInteractionEnabled="NO" contentMode="bottom" image="suburban" translatesAutoresizingMaskIntoConstraints="NO" id="ukD-9j-ezc">
+                                                <rect key="frame" x="0.0" y="567" width="375" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="IqG-9v-BWm"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jcy-IG-hJ6">
+                                                <rect key="frame" x="14" y="362" width="347" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="vJd-KN-zhO"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Gibson-Light" family="Gibson" pointSize="22"/>
+                                                <state key="normal" title="logout">
+                                                    <color key="titleColor" red="0.45882352939999999" green="0.70588235290000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedTitleKey" value="more.logout-button.text"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="logoutDidPressed" destination="2DX-0N-vK1" eventType="touchUpInside" id="cG5-LW-idP"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="onC-Sh-3MG" firstAttribute="top" secondItem="3Jf-wp-aJs" secondAttribute="bottom" id="11V-Y4-Kjx"/>
+                                            <constraint firstItem="z1n-Kk-soc" firstAttribute="leading" secondItem="3bb-lM-s99" secondAttribute="leading" id="7Z4-gJ-edC"/>
+                                            <constraint firstItem="ukD-9j-ezc" firstAttribute="top" relation="greaterThanOrEqual" secondItem="jcy-IG-hJ6" secondAttribute="bottom" constant="33" id="8CQ-Vj-D40"/>
+                                            <constraint firstItem="z1n-Kk-soc" firstAttribute="leading" secondItem="TIy-Dv-tgx" secondAttribute="leading" constant="14" id="8Oc-3u-9MW"/>
+                                            <constraint firstAttribute="bottom" secondItem="ukD-9j-ezc" secondAttribute="bottom" priority="999" id="Dno-OU-rDh"/>
+                                            <constraint firstItem="onC-Sh-3MG" firstAttribute="trailing" secondItem="3Jf-wp-aJs" secondAttribute="trailing" id="EMc-sC-jbi"/>
+                                            <constraint firstItem="PSe-eM-gHZ" firstAttribute="top" secondItem="Pr6-PO-yRb" secondAttribute="bottom" id="EfF-El-BIu"/>
+                                            <constraint firstAttribute="trailing" secondItem="ukD-9j-ezc" secondAttribute="trailing" id="Gla-Ik-ZoL"/>
+                                            <constraint firstItem="z1n-Kk-soc" firstAttribute="trailing" secondItem="3bb-lM-s99" secondAttribute="trailing" id="Hwg-0I-MLI"/>
+                                            <constraint firstItem="3Jf-wp-aJs" firstAttribute="trailing" secondItem="SSV-WR-20N" secondAttribute="trailing" id="IwM-Q2-bel"/>
+                                            <constraint firstItem="VoG-NU-rGP" firstAttribute="leading" secondItem="3Jf-wp-aJs" secondAttribute="leading" id="JQa-HA-q2G"/>
+                                            <constraint firstItem="ukD-9j-ezc" firstAttribute="top" secondItem="jcy-IG-hJ6" secondAttribute="bottom" priority="999" constant="33" id="KxL-9p-MVm"/>
+                                            <constraint firstItem="jcy-IG-hJ6" firstAttribute="trailing" secondItem="Hbn-DJ-DM9" secondAttribute="trailing" id="Lat-eK-X6X"/>
+                                            <constraint firstItem="3Jf-wp-aJs" firstAttribute="trailing" secondItem="VoG-NU-rGP" secondAttribute="trailing" id="MMe-IN-IrC"/>
+                                            <constraint firstItem="AjN-v6-fEX" firstAttribute="leading" secondItem="Pr6-PO-yRb" secondAttribute="leading" id="Ndf-CC-Uem"/>
+                                            <constraint firstItem="VoG-NU-rGP" firstAttribute="trailing" secondItem="AjN-v6-fEX" secondAttribute="trailing" id="OKg-2F-zUY"/>
+                                            <constraint firstItem="TyO-KD-pUB" firstAttribute="leading" secondItem="SSV-WR-20N" secondAttribute="leading" id="OtM-NR-uB6"/>
+                                            <constraint firstItem="TyO-KD-pUB" firstAttribute="top" secondItem="3bb-lM-s99" secondAttribute="bottom" id="QBg-cY-EU9"/>
+                                            <constraint firstItem="TyO-KD-pUB" firstAttribute="trailing" secondItem="SSV-WR-20N" secondAttribute="trailing" id="Wri-uh-Tit"/>
+                                            <constraint firstItem="3Jf-wp-aJs" firstAttribute="top" secondItem="SSV-WR-20N" secondAttribute="bottom" id="X83-nu-FKL"/>
+                                            <constraint firstItem="Hbn-DJ-DM9" firstAttribute="top" secondItem="PSe-eM-gHZ" secondAttribute="bottom" id="XIW-fR-9KY"/>
+                                            <constraint firstItem="jcy-IG-hJ6" firstAttribute="leading" secondItem="Hbn-DJ-DM9" secondAttribute="leading" id="XRX-Wp-ieG"/>
+                                            <constraint firstItem="VoG-NU-rGP" firstAttribute="top" secondItem="onC-Sh-3MG" secondAttribute="bottom" id="Xdg-bh-ORC"/>
+                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ukD-9j-ezc" secondAttribute="bottom" id="Zm5-Dq-fXy"/>
+                                            <constraint firstItem="Hbn-DJ-DM9" firstAttribute="centerX" secondItem="ukD-9j-ezc" secondAttribute="centerX" id="abF-PX-lc5"/>
+                                            <constraint firstItem="3Jf-wp-aJs" firstAttribute="leading" secondItem="SSV-WR-20N" secondAttribute="leading" id="ahd-ci-ii9"/>
+                                            <constraint firstItem="z1n-Kk-soc" firstAttribute="top" secondItem="TIy-Dv-tgx" secondAttribute="top" constant="32" id="b9i-MS-9JM"/>
+                                            <constraint firstItem="GHw-jC-Pf1" firstAttribute="top" secondItem="z1n-Kk-soc" secondAttribute="top" id="bLH-hI-3oy"/>
+                                            <constraint firstAttribute="trailing" secondItem="z1n-Kk-soc" secondAttribute="trailing" constant="14" id="bn1-AG-tCx"/>
+                                            <constraint firstItem="VoG-NU-rGP" firstAttribute="leading" secondItem="AjN-v6-fEX" secondAttribute="leading" id="c2p-8N-tih"/>
+                                            <constraint firstItem="3bb-lM-s99" firstAttribute="top" secondItem="z1n-Kk-soc" secondAttribute="bottom" id="dZQ-s4-0Wk"/>
+                                            <constraint firstItem="onC-Sh-3MG" firstAttribute="leading" secondItem="3Jf-wp-aJs" secondAttribute="leading" id="f4w-kb-CSr"/>
+                                            <constraint firstItem="AjN-v6-fEX" firstAttribute="top" secondItem="VoG-NU-rGP" secondAttribute="bottom" id="hFo-IB-zYH"/>
+                                            <constraint firstItem="Pr6-PO-yRb" firstAttribute="top" secondItem="AjN-v6-fEX" secondAttribute="bottom" id="hHc-tQ-in1"/>
+                                            <constraint firstItem="AjN-v6-fEX" firstAttribute="trailing" secondItem="Pr6-PO-yRb" secondAttribute="trailing" id="iJt-Gf-c8j"/>
+                                            <constraint firstItem="PSe-eM-gHZ" firstAttribute="leading" secondItem="Hbn-DJ-DM9" secondAttribute="leading" id="jQL-lC-OPB"/>
+                                            <constraint firstItem="Pr6-PO-yRb" firstAttribute="trailing" secondItem="PSe-eM-gHZ" secondAttribute="trailing" id="kdO-AB-O3Z"/>
+                                            <constraint firstItem="SSV-WR-20N" firstAttribute="top" secondItem="TyO-KD-pUB" secondAttribute="bottom" id="m9o-KC-Umh"/>
+                                            <constraint firstItem="jcy-IG-hJ6" firstAttribute="top" secondItem="Hbn-DJ-DM9" secondAttribute="bottom" id="mne-uj-zJe"/>
+                                            <constraint firstItem="3bb-lM-s99" firstAttribute="leading" secondItem="TyO-KD-pUB" secondAttribute="leading" id="oQH-UE-x9i"/>
+                                            <constraint firstItem="ukD-9j-ezc" firstAttribute="leading" secondItem="TIy-Dv-tgx" secondAttribute="leading" id="rmb-UH-hMi"/>
+                                            <constraint firstItem="VoG-NU-rGP" firstAttribute="leading" secondItem="3Jf-wp-aJs" secondAttribute="leading" id="sPY-XS-qeh"/>
+                                            <constraint firstItem="GHw-jC-Pf1" firstAttribute="trailing" secondItem="Hbn-DJ-DM9" secondAttribute="trailing" id="v2b-vn-B2m"/>
+                                            <constraint firstItem="PSe-eM-gHZ" firstAttribute="trailing" secondItem="Hbn-DJ-DM9" secondAttribute="trailing" id="yLK-zi-NbG"/>
+                                            <constraint firstItem="Pr6-PO-yRb" firstAttribute="leading" secondItem="PSe-eM-gHZ" secondAttribute="leading" id="yX3-0z-WL6"/>
+                                            <constraint firstItem="SSV-WR-20N" firstAttribute="trailing" secondItem="VoG-NU-rGP" secondAttribute="trailing" id="zML-Mk-HHS"/>
+                                            <constraint firstItem="3bb-lM-s99" firstAttribute="trailing" secondItem="TyO-KD-pUB" secondAttribute="trailing" id="zoW-nU-fza"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="TIy-Dv-tgx" secondAttribute="bottom" id="0J1-WE-DD8"/>
+                                    <constraint firstItem="TIy-Dv-tgx" firstAttribute="height" secondItem="HHf-xQ-8rK" secondAttribute="height" priority="750" id="4h9-O4-QE7"/>
+                                    <constraint firstItem="TIy-Dv-tgx" firstAttribute="top" secondItem="HHf-xQ-8rK" secondAttribute="top" id="HN3-fF-zwd"/>
+                                    <constraint firstItem="TIy-Dv-tgx" firstAttribute="leading" secondItem="HHf-xQ-8rK" secondAttribute="leading" id="bxv-QS-tGO"/>
+                                    <constraint firstAttribute="trailing" secondItem="TIy-Dv-tgx" secondAttribute="trailing" id="d0X-0e-ltm"/>
+                                    <constraint firstItem="TIy-Dv-tgx" firstAttribute="width" secondItem="HHf-xQ-8rK" secondAttribute="width" id="oqo-kN-2U0"/>
+                                    <constraint firstItem="TIy-Dv-tgx" firstAttribute="centerX" secondItem="HHf-xQ-8rK" secondAttribute="centerX" id="vgM-JZ-ifl"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="HHf-xQ-8rK" secondAttribute="bottom" id="2v3-79-15q"/>
+                            <constraint firstAttribute="trailing" secondItem="HHf-xQ-8rK" secondAttribute="trailing" id="Hqk-k9-LaU"/>
+                            <constraint firstItem="HHf-xQ-8rK" firstAttribute="top" secondItem="Nvo-Se-Qah" secondAttribute="top" id="PQL-UU-l5m"/>
+                            <constraint firstItem="HHf-xQ-8rK" firstAttribute="leading" secondItem="Nvo-Se-Qah" secondAttribute="leading" id="ZCs-0n-h2U"/>
+                            <constraint firstItem="8aM-9S-bZv" firstAttribute="top" secondItem="ukD-9j-ezc" secondAttribute="bottom" priority="999" id="dZq-IH-15T"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" id="rlj-le-6Y1">
+                        <barButtonItem key="backBarButtonItem" title="back" id="sTW-Fd-AX0"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3cg-ss-jew" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2598" y="-2082"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="hv2-at-G3r">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" id="YA7-AV-VQt" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FK8-yD-AiP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3069" y="-2369"/>
+        </scene>
+        <!--Badges-->
+        <scene sceneID="6LG-BF-DbV">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Badges" bundleIdentifier="com.beitsafe.KneetlyCommon" id="MIE-n9-Cib" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U2o-0f-UAc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3073" y="-2333"/>
+        </scene>
+        <!--FavouritedBy-->
+        <scene sceneID="6jx-Pp-MCa">
+            <objects>
+                <viewControllerPlaceholder storyboardName="FavouritedBy" id="XeI-Li-xWh" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jxu-78-5Hn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3101" y="-2295"/>
+        </scene>
+        <!--Tutorials-->
+        <scene sceneID="zik-YX-J9a">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Tutorials" bundleIdentifier="com.beitsafe.KneetlyCommon" id="wfK-Ih-lk1" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Agi-Mj-IPT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3080" y="-2219"/>
+        </scene>
+        <!--WashTypes-->
+        <scene sceneID="cI5-9V-D1V">
+            <objects>
+                <viewControllerPlaceholder storyboardName="WashTypes" bundleIdentifier="com.beitsafe.KneetlyCommon" id="EkM-bY-g8B" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xeP-Yw-d9u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3092" y="-2181"/>
+        </scene>
+        <!--FAQ-->
+        <scene sceneID="33P-WC-QWD">
+            <objects>
+                <viewControllerPlaceholder storyboardName="FAQ" bundleIdentifier="com.beitsafe.KneetlyCommon" id="YdO-vp-HXG" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G2m-Ie-ZYW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3055" y="-2105"/>
+        </scene>
+        <!--TermsConditions-->
+        <scene sceneID="Q87-Iu-Enj">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TermsConditions" bundleIdentifier="com.beitsafe.KneetlyCommon" id="xb8-Rc-dSG" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cii-zB-ko2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3118" y="-2066"/>
+        </scene>
+        <!--PaymentInformation-->
+        <scene sceneID="8Li-5G-dJH">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PaymentInformation" id="ai4-vX-Jke" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pxi-tG-BqN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3134" y="-2028"/>
+        </scene>
+        <!--Referral-->
+        <scene sceneID="Le4-q8-RJ2">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Referral" bundleIdentifier="com.beitsafe.KneetlyCommon" id="H8Y-dY-wn3" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="818-9d-9ZD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3076" y="-2257"/>
+        </scene>
+        <!--Help-->
+        <scene sceneID="VwD-YX-ote">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Help" bundleIdentifier="com.beitsafe.KneetlyCommon" id="K15-yy-2oh" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qSP-dW-b7n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3059" y="-2144"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bucketDeadpan" width="112" height="142"/>
+        <image name="suburban" width="685" height="92"/>
+    </resources>
+</document>

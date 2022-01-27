@@ -1,0 +1,9 @@
+//
+//  UserProd.xcconfig
+//  KneetlyUserApp
+//
+//  Created by Matt Westcott on 07/03/2017.
+//  Copyright © 2017 Be It Safe Pty Ltd. All rights reserved.
+//
+
+SERVER = api.kneetly.com/v1/

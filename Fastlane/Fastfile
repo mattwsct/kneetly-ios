@@ -1,0 +1,19 @@
+fastlane_version "2.28.4"
+
+default_platform :ios
+
+platform :ios do
+  desc “Create build for testing”
+
+  lane :testUserStage do
+    match(git_branch: “Kneetly”, type: “adhoc”, app_identifier: "com.beitsafe.KneetlyUser", readonly: true)
+    gym(scheme: “KneetlyUserAppStage”, method: “ad-hoc”) # Build your app - more options available
+  end
+
+  lane :testWashersStage do
+    match(git_branch: “KneetlyEnterprise”, type: “enterprise”, app_identifier: "com.beitsafe.KneetlyWashers”, readonly: true)
+    gym(scheme: "KneetlyWashersAppStage”, method: “enterprise”) # Build your app - more options available
+  end
+
+  # You can define as many lanes as you want
+end

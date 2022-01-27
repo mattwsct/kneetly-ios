@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="G0E-RC-TRx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gibson-Light.otf">
+            <string>Gibson-Light</string>
+        </array>
+        <array key="Gibson.otf">
+            <string>Gibson-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Review View Controller-->
+        <scene sceneID="alC-HK-aJX">
+            <objects>
+                <viewController storyboardIdentifier="ReviewViewController" id="G0E-RC-TRx" customClass="ReviewViewController" customModule="KneetlyCommon" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="m9Y-sT-zwf"/>
+                        <viewControllerLayoutGuide type="bottom" id="KKV-Cq-yBF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rR9-BD-Rya">
+                        <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="how was your wash experience?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pJC-8b-ShF">
+                                <rect key="frame" x="16" y="28" width="343" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="w6s-gB-SNh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Gibson-Light" family="Gibson" pointSize="15"/>
+                                <color key="textColor" red="0.015686275440000001" green="0.22352941330000001" blue="0.36078432199999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedTextKey" value="review-washer.how-was-your-wash-experience-label.text"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GNa-LI-dvX" customClass="HCSStarRatingView">
+                                <rect key="frame" x="128" y="61" width="120" height="23"/>
+                                <color key="tintColor" red="1" green="0.36078431370000003" blue="0.058823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="9WN-SB-W6v"/>
+                                    <constraint firstAttribute="width" constant="120" id="Vdr-nz-vkx"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uoF-hs-6is">
+                                <rect key="frame" x="97" y="435" width="182" height="31"/>
+                                <subviews>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="eAf-49-jYU">
+                                        <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+                                    </switch>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="add to favorites" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qWS-WE-mtf">
+                                        <rect key="frame" x="57" y="0.0" width="125" height="31"/>
+                                        <fontDescription key="fontDescription" name="Gibson-Regular" family="Gibson" pointSize="19"/>
+                                        <color key="textColor" red="0.20000000000000001" green="0.3803921569" blue="0.49019607840000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedTextKey" value="review-washer.add-to-favorites-label.text"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="qWS-WE-mtf" secondAttribute="trailing" id="AOE-xo-E9c"/>
+                                    <constraint firstAttribute="bottom" secondItem="eAf-49-jYU" secondAttribute="bottom" id="BDd-10-tJI"/>
+                                    <constraint firstItem="qWS-WE-mtf" firstAttribute="height" secondItem="eAf-49-jYU" secondAttribute="height" id="BqQ-6B-g07"/>
+                                    <constraint firstItem="qWS-WE-mtf" firstAttribute="leading" secondItem="eAf-49-jYU" secondAttribute="trailing" constant="8" symbolic="YES" id="b8r-d5-be1"/>
+                                    <constraint firstItem="qWS-WE-mtf" firstAttribute="centerY" secondItem="eAf-49-jYU" secondAttribute="centerY" id="bDq-EG-zVG"/>
+                                    <constraint firstItem="eAf-49-jYU" firstAttribute="top" secondItem="uoF-hs-6is" secondAttribute="top" id="hd0-0k-j3G"/>
+                                    <constraint firstItem="eAf-49-jYU" firstAttribute="leading" secondItem="uoF-hs-6is" secondAttribute="leading" id="yTO-M2-7rg"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3r5-ab-tbn" customClass="KneetlyButton" customModule="KneetlyCommon">
+                                <rect key="frame" x="76" y="477" width="224" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="224" id="ghU-kz-EUS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Gibson-Light" family="Gibson" pointSize="28"/>
+                                <color key="tintColor" red="0.28235294119999998" green="0.98431372549999996" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="confirm">
+                                    <color key="titleColor" red="0.28235294119999998" green="0.98431372549999996" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedTitleKey" value="review-washer.confirm-button.title"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="confirm" destination="G0E-RC-TRx" eventType="touchUpInside" id="ko3-YF-0Y5"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dlB-Hj-dpC" customClass="KMPlaceholderTextView" customModule="KMPlaceholderTextView">
+                                <rect key="frame" x="16" y="92" width="343" height="335"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Gibson-Light" family="Gibson" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedPlaceholderKey" value="review-washer.comments-text-field.placeholder"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="comments (optional)"/>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KKV-Cq-yBF" firstAttribute="top" secondItem="3r5-ab-tbn" secondAttribute="bottom" constant="36" id="19F-qT-rAN"/>
+                            <constraint firstItem="dlB-Hj-dpC" firstAttribute="leading" secondItem="pJC-8b-ShF" secondAttribute="leading" id="1MB-Z9-Rdk"/>
+                            <constraint firstItem="pJC-8b-ShF" firstAttribute="top" secondItem="m9Y-sT-zwf" secondAttribute="bottom" constant="28" id="5S8-j6-0NN"/>
+                            <constraint firstItem="pJC-8b-ShF" firstAttribute="trailing" secondItem="rR9-BD-Rya" secondAttribute="trailingMargin" id="7tR-hh-Olp"/>
+                            <constraint firstItem="dlB-Hj-dpC" firstAttribute="trailing" secondItem="pJC-8b-ShF" secondAttribute="trailing" id="Aek-kw-SI6"/>
+                            <constraint firstItem="pJC-8b-ShF" firstAttribute="centerX" secondItem="GNa-LI-dvX" secondAttribute="centerX" id="EHi-yS-1nj"/>
+                            <constraint firstItem="dlB-Hj-dpC" firstAttribute="top" secondItem="GNa-LI-dvX" secondAttribute="bottom" constant="8" symbolic="YES" id="Jjp-1g-kiE"/>
+                            <constraint firstItem="uoF-hs-6is" firstAttribute="top" secondItem="dlB-Hj-dpC" secondAttribute="bottom" constant="8" symbolic="YES" id="Kh9-jP-KYh"/>
+                            <constraint firstItem="3r5-ab-tbn" firstAttribute="centerX" secondItem="uoF-hs-6is" secondAttribute="centerX" id="PTM-Tw-Fgp"/>
+                            <constraint firstItem="3r5-ab-tbn" firstAttribute="top" secondItem="uoF-hs-6is" secondAttribute="bottom" constant="11" id="dHc-ne-j3m"/>
+                            <constraint firstItem="uoF-hs-6is" firstAttribute="centerX" secondItem="rR9-BD-Rya" secondAttribute="centerX" id="sBw-Xe-nnD"/>
+                            <constraint firstItem="pJC-8b-ShF" firstAttribute="leading" secondItem="rR9-BD-Rya" secondAttribute="leadingMargin" id="xKi-6l-Yde"/>
+                            <constraint firstItem="GNa-LI-dvX" firstAttribute="top" secondItem="pJC-8b-ShF" secondAttribute="bottom" constant="8" symbolic="YES" id="zHQ-eJ-VUy"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="x4d-zZ-wdS">
+                        <barButtonItem key="backBarButtonItem" title="back" id="6R6-5O-O63"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <connections>
+                        <outlet property="commentsTextView" destination="dlB-Hj-dpC" id="2uV-gh-Q6s"/>
+                        <outlet property="favoriteSwitch" destination="eAf-49-jYU" id="EmK-Xq-utg"/>
+                        <outlet property="favoriteView" destination="uoF-hs-6is" id="Agq-6W-wRt"/>
+                        <outlet property="ratingView" destination="GNa-LI-dvX" id="H9K-dK-az2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oaa-fh-ENp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4370" y="-392"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xLV-dF-eBq">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gibson-Light.otf">
+            <string>Gibson-Light</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Tutorials View Controller-->
+        <scene sceneID="hiA-kz-8a9">
+            <objects>
+                <viewController id="xLV-dF-eBq" customClass="TutorialsViewController" customModule="KneetlyCommon" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MNx-Ys-flQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="7Ob-xj-oIn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QjH-Ug-QrW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="72" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WBC-ef-aGF">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" red="0.75973298295828329" green="0.76078431372549016" blue="0.76050950371759363" alpha="0.90212823275862064" colorSpace="calibratedRGB"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="xUT-ql-xtI">
+                                    <rect key="frame" x="0.0" y="114" width="375" height="220"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dzF-Oa-T5N" customClass="KneetlyButton" customModule="KneetlyCommon" customModuleProvider="target">
+                                            <rect key="frame" x="172" y="91" width="30" height="30"/>
+                                            <color key="tintColor" red="0.28235294119999998" green="0.98431372549999996" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                    <real key="value" value="26"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="horizontalInsets">
+                                                    <real key="value" value="64"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="localizedTitleKey" value="tutorial.continue-button.title"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="continueButtonTapped:" destination="xLV-dF-eBq" eventType="touchUpInside" id="J56-sP-gse"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbu-w8-lq4">
+                                            <rect key="frame" x="20" y="68" width="335" height="0.0"/>
+                                            <fontDescription key="fontDescription" name="Gibson-Light" family="Gibson" pointSize="17"/>
+                                            <color key="textColor" red="0.59999999999999998" green="0.67843137249999996" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="localizedTextKey" value="tutorial.description-label.text"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="dzF-Oa-T5N" secondAttribute="bottom" priority="999" constant="99" id="CAg-cK-nKl"/>
+                                        <constraint firstItem="wbu-w8-lq4" firstAttribute="top" relation="greaterThanOrEqual" secondItem="xUT-ql-xtI" secondAttribute="top" constant="20" id="Ivo-gk-fPa"/>
+                                        <constraint firstItem="dzF-Oa-T5N" firstAttribute="top" secondItem="wbu-w8-lq4" secondAttribute="bottom" constant="23" id="KiK-7z-F7D"/>
+                                        <constraint firstItem="dzF-Oa-T5N" firstAttribute="centerX" secondItem="xUT-ql-xtI" secondAttribute="centerX" id="ocQ-mv-F9w"/>
+                                        <constraint firstItem="wbu-w8-lq4" firstAttribute="leading" secondItem="xUT-ql-xtI" secondAttribute="leading" constant="20" id="r1D-VU-3Na"/>
+                                        <constraint firstAttribute="trailing" secondItem="wbu-w8-lq4" secondAttribute="trailing" constant="20" id="r7l-9b-Ng7"/>
+                                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="dzF-Oa-T5N" secondAttribute="bottom" constant="20" id="zoJ-V6-qZ2"/>
+                                    </constraints>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="videoCell" rowHeight="86" id="Hrx-dS-RmX" customClass="VideoItemCell" customModule="KneetlyCommon" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="86"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Hrx-dS-RmX" id="yjq-J8-Zlm">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="85.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jvj-BT-ZXs">
+                                                    <rect key="frame" x="23" y="23" width="41" height="19"/>
+                                                    <fontDescription key="fontDescription" name="Gibson-Light" family="Gibson" pointSize="19"/>
+                                                    <color key="textColor" red="0.0" green="0.2196078431372549" blue="0.36470588235294116" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xV1-yy-kMj">
+                                                    <rect key="frame" x="23" y="42" width="34.5" height="16"/>
+                                                    <fontDescription key="fontDescription" name="Gibson-Light" family="Gibson" pointSize="16"/>
+                                                    <color key="textColor" red="0.60392156862745094" green="0.67843137254901964" blue="0.73725490196078436" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="xV1-yy-kMj" firstAttribute="leading" secondItem="Jvj-BT-ZXs" secondAttribute="leading" id="NEw-rC-rkc"/>
+                                                <constraint firstItem="xV1-yy-kMj" firstAttribute="top" secondItem="Jvj-BT-ZXs" secondAttribute="bottom" id="Rq9-Of-eu6"/>
+                                                <constraint firstItem="Jvj-BT-ZXs" firstAttribute="leading" secondItem="yjq-J8-Zlm" secondAttribute="leading" constant="23" id="XYC-ng-8d7"/>
+                                                <constraint firstItem="Jvj-BT-ZXs" firstAttribute="top" secondItem="yjq-J8-Zlm" secondAttribute="top" constant="23" id="mfh-ga-SQN"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="infoLabel" destination="xV1-yy-kMj" id="Rbh-Ky-lgi"/>
+                                            <outlet property="nameLabel" destination="Jvj-BT-ZXs" id="hZV-9z-SSD"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="xLV-dF-eBq" id="Mgl-8h-nWf"/>
+                                    <outlet property="delegate" destination="xLV-dF-eBq" id="eDn-gT-r4m"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WBC-ef-aGF" firstAttribute="leading" secondItem="QjH-Ug-QrW" secondAttribute="leading" id="HjU-7u-9r6"/>
+                            <constraint firstItem="7Ob-xj-oIn" firstAttribute="top" secondItem="WBC-ef-aGF" secondAttribute="bottom" id="ItY-ay-xOw"/>
+                            <constraint firstItem="WBC-ef-aGF" firstAttribute="top" secondItem="QjH-Ug-QrW" secondAttribute="top" id="XNO-77-jyf"/>
+                            <constraint firstAttribute="trailing" secondItem="WBC-ef-aGF" secondAttribute="trailing" id="dvl-5a-9OQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="continueButton" destination="dzF-Oa-T5N" id="qht-jN-ZE7"/>
+                        <outlet property="tableView" destination="WBC-ef-aGF" id="6dE-nx-ztT"/>
+                        <outlet property="view" destination="QjH-Ug-QrW" id="3Wb-yA-gmI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qud-7o-cXu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1970.4000000000001" y="-734.48275862068976"/>
+        </scene>
+    </scenes>
+</document>

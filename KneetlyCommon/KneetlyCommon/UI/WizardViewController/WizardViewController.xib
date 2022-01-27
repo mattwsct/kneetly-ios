@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gibson-Light.otf">
+            <string>Gibson-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WizardViewController" customModule="KneetlyCommon" customModuleProvider="target">
+            <connections>
+                <outlet property="cancelButton" destination="vIn-6p-vbS" id="bSE-FW-zpX"/>
+                <outlet property="contentView" destination="Pkr-DR-sdq" id="jdt-Ma-4fU"/>
+                <outlet property="headerView" destination="hpE-zT-Tld" id="4f4-J8-ikS"/>
+                <outlet property="nextButton" destination="mQs-ym-mf5" id="ypw-El-QjR"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="foG-IL-d9t" userLabel="Header View">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hpE-zT-Tld" customClass="WizardHeaderView" customModule="KneetlyCommon" customModuleProvider="target">
+                            <rect key="frame" x="10" y="40" width="355" height="60"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="hpE-zT-Tld" firstAttribute="centerX" secondItem="foG-IL-d9t" secondAttribute="centerX" id="Ctm-TP-7lY"/>
+                        <constraint firstItem="hpE-zT-Tld" firstAttribute="top" secondItem="foG-IL-d9t" secondAttribute="top" constant="40" id="Vip-yD-eGK">
+                            <variation key="heightClass=compact" constant="0.0"/>
+                        </constraint>
+                        <constraint firstAttribute="height" constant="120" id="e4R-Be-Kqo">
+                            <variation key="heightClass=compact" constant="60"/>
+                        </constraint>
+                        <constraint firstItem="hpE-zT-Tld" firstAttribute="leading" secondItem="foG-IL-d9t" secondAttribute="leading" constant="10" id="fPi-bp-YG0"/>
+                        <constraint firstItem="hpE-zT-Tld" firstAttribute="centerY" secondItem="foG-IL-d9t" secondAttribute="centerY" constant="10" id="ip4-xL-PyF"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AWe-8P-JoG" userLabel="Body View">
+                    <rect key="frame" x="0.0" y="120" width="375" height="439"/>
+                    <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mcb-Ab-scI">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="439"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="375" placeholderIntrinsicHeight="600" translatesAutoresizingMaskIntoConstraints="NO" id="Pkr-DR-sdq">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="600"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="Pkr-DR-sdq" firstAttribute="width" secondItem="mcb-Ab-scI" secondAttribute="width" id="CaB-4p-YWM"/>
+                                <constraint firstItem="Pkr-DR-sdq" firstAttribute="top" secondItem="mcb-Ab-scI" secondAttribute="top" id="RNC-r9-ZBv"/>
+                                <constraint firstItem="Pkr-DR-sdq" firstAttribute="leading" secondItem="mcb-Ab-scI" secondAttribute="leading" id="Wef-Iw-Wr7"/>
+                                <constraint firstAttribute="bottom" secondItem="Pkr-DR-sdq" secondAttribute="bottom" id="qf8-C8-NGC"/>
+                                <constraint firstAttribute="trailing" secondItem="Pkr-DR-sdq" secondAttribute="trailing" id="ufo-UO-p2O"/>
+                            </constraints>
+                        </scrollView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="mcb-Ab-scI" secondAttribute="bottom" id="2Jl-l4-Amv"/>
+                        <constraint firstItem="mcb-Ab-scI" firstAttribute="leading" secondItem="AWe-8P-JoG" secondAttribute="leading" id="MUM-an-0ZX"/>
+                        <constraint firstAttribute="trailing" secondItem="mcb-Ab-scI" secondAttribute="trailing" id="W9c-dr-yUC"/>
+                        <constraint firstItem="mcb-Ab-scI" firstAttribute="top" secondItem="AWe-8P-JoG" secondAttribute="top" id="dqU-35-yS8"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ob5-je-PFl" userLabel="Bottom View">
+                    <rect key="frame" x="0.0" y="559" width="375" height="108"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mQs-ym-mf5" customClass="KneetlyButton" customModule="KneetlyCommon" customModuleProvider="target">
+                            <rect key="frame" x="173" y="8" width="30" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="H8x-5I-iHN"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Gibson-Light" family="Gibson" pointSize="28"/>
+                            <color key="tintColor" red="0.28235294119999998" green="0.98431372549999996" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="next">
+                                <color key="titleColor" red="0.28235294119999998" green="0.98431372549999996" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                    <real key="value" value="28"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="nextButtonDidPressed" destination="-1" eventType="touchUpInside" id="Ybl-no-0uC"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vIn-6p-vbS">
+                            <rect key="frame" x="164" y="65" width="47" height="29"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="29" id="UMN-8b-axW"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Gibson-Light" family="Gibson" pointSize="18"/>
+                            <color key="tintColor" red="1" green="0.36078431370000003" blue="0.058823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="cancel"/>
+                            <connections>
+                                <action selector="cancelButtonDidPressed" destination="-1" eventType="touchUpInside" id="ahC-R5-hvA"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="108" id="2m7-ci-F0k"/>
+                        <constraint firstItem="mQs-ym-mf5" firstAttribute="top" secondItem="Ob5-je-PFl" secondAttribute="top" constant="8" id="4OO-MB-gAU"/>
+                        <constraint firstItem="mQs-ym-mf5" firstAttribute="centerX" secondItem="Ob5-je-PFl" secondAttribute="centerX" id="B4B-YT-8rA"/>
+                        <constraint firstAttribute="bottom" secondItem="vIn-6p-vbS" secondAttribute="bottom" constant="14" id="KTp-JP-vST"/>
+                        <constraint firstItem="vIn-6p-vbS" firstAttribute="centerX" secondItem="Ob5-je-PFl" secondAttribute="centerX" id="OI9-9h-ajS"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="AWe-8P-JoG" secondAttribute="trailing" id="Cve-58-ryq"/>
+                <constraint firstItem="AWe-8P-JoG" firstAttribute="top" secondItem="foG-IL-d9t" secondAttribute="bottom" id="J8q-W0-Skl"/>
+                <constraint firstItem="foG-IL-d9t" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="JlQ-W3-Rdt"/>
+                <constraint firstItem="Ob5-je-PFl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="LfB-K9-nzp"/>
+                <constraint firstItem="foG-IL-d9t" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="WLb-MG-pu9"/>
+                <constraint firstItem="AWe-8P-JoG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ZT9-RK-KKy"/>
+                <constraint firstAttribute="trailing" secondItem="foG-IL-d9t" secondAttribute="trailing" id="dGo-Ix-D8L"/>
+                <constraint firstAttribute="trailing" secondItem="Ob5-je-PFl" secondAttribute="trailing" id="pCb-Cl-BP4"/>
+                <constraint firstItem="Ob5-je-PFl" firstAttribute="top" secondItem="AWe-8P-JoG" secondAttribute="bottom" id="tkI-wg-OdL"/>
+                <constraint firstAttribute="bottom" secondItem="Ob5-je-PFl" secondAttribute="bottom" id="zcl-tm-mb7"/>
+            </constraints>
+            <point key="canvasLocation" x="34.5" y="53.5"/>
+        </view>
+    </objects>
+</document>

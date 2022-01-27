@@ -1,0 +1,943 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="jZr-SY-08M">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gibson-Light.otf">
+            <string>Gibson-Light</string>
+        </array>
+        <array key="Gibson.otf">
+            <string>Gibson-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Search For Washer View Controller-->
+        <scene sceneID="E3K-MA-PM6">
+            <objects>
+                <viewController storyboardIdentifier="SearchForWasherViewController" id="jZr-SY-08M" customClass="SearchForWasherViewController" customModule="KneetlyUserApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YMh-3k-6pz"/>
+                        <viewControllerLayoutGuide type="bottom" id="BVp-h2-ccg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jRw-Jj-N0y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KSX-dJ-zWs">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fgr-23-UhF">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="598"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="254" verticalCompressionResistancePriority="1000" image="kneetlyLogoLarge" translatesAutoresizingMaskIntoConstraints="NO" id="pHN-GN-Lb3">
+                                                <rect key="frame" x="73" y="24" width="260" height="66"/>
+                                            </imageView>
+                                            <label opaque="NO" contentMode="left" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FiW-wb-rt4" customClass="ActiveLabel" customModule="ActiveLabel">
+                                                <rect key="frame" x="20" y="116" width="335" height="14"/>
+                                                <fontDescription key="fontDescription" name="Gibson-Regular" family="Gibson" pointSize="21"/>
+                                                <color key="textColor" red="0.45882352939999999" green="0.70588235290000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedTextKey" value="search-for-washer.status-label.text"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="lineSpacing">
+                                                        <real key="value" value="7"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="254" verticalCompressionResistancePriority="1000" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DBW-nP-gf8" customClass="ActiveLabel" customModule="ActiveLabel">
+                                                <rect key="frame" x="20" y="150" width="335" height="14"/>
+                                                <fontDescription key="fontDescription" name="Gibson-Light" family="Gibson" pointSize="14"/>
+                                                <color key="textColor" red="0.20000000000000001" green="0.3803921569" blue="0.49019607840000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedTextKey" value="search-for-washer.info-label.text"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="lineSpacing">
+                                                        <real key="value" value="6"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="254" verticalCompressionResistancePriority="1000" image="spongeHappyLarge" translatesAutoresizingMaskIntoConstraints="NO" id="uxH-y2-wlq">
+                                                <rect key="frame" x="143" y="184" width="90" height="165"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="253" verticalCompressionResistancePriority="1000" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3q8-kA-Xsp" customClass="ActiveLabel" customModule="ActiveLabel">
+                                                <rect key="frame" x="20" y="369" width="335" height="139"/>
+                                                <fontDescription key="fontDescription" name="Gibson-Light" family="Gibson" pointSize="14"/>
+                                                <color key="textColor" red="0.20000000000000001" green="0.3803921569" blue="0.49019607840000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedTextKey" value="search-for-washer.tip-label.text"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="lineSpacing">
+                                                        <real key="value" value="6"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KNY-GJ-XWp" customClass="KneetlyButton" customModule="KneetlyCommon">
+                                                <rect key="frame" x="173" y="528" width="30" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="yoZ-FC-bUA"/>
+                                                </constraints>
+                                                <color key="tintColor" red="1" green="0.36078431370000003" blue="0.058823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedTitleKey" value="search-for-washer.cancel-search-button.title"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                        <real key="value" value="25"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="horizontalInsets">
+                                                        <real key="value" value="14"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="16.699999999999999"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="cancelButtonTapped:" destination="jZr-SY-08M" eventType="touchUpInside" id="Tlg-Jz-OEy"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="3q8-kA-Xsp" secondAttribute="trailing" constant="20" id="3bY-O2-uXZ"/>
+                                            <constraint firstItem="uxH-y2-wlq" firstAttribute="top" secondItem="DBW-nP-gf8" secondAttribute="bottom" constant="20" id="3gv-QO-m1V"/>
+                                            <constraint firstItem="FiW-wb-rt4" firstAttribute="leading" secondItem="Fgr-23-UhF" secondAttribute="leading" constant="20" id="A1I-FF-GAB"/>
+                                            <constraint firstAttribute="trailing" secondItem="DBW-nP-gf8" secondAttribute="trailing" constant="20" id="Ebd-3w-1fF"/>
+                                            <constraint firstItem="KNY-GJ-XWp" firstAttribute="top" secondItem="3q8-kA-Xsp" secondAttribute="bottom" priority="998" constant="20" id="IlO-Dc-cCq"/>
+                                            <constraint firstItem="KNY-GJ-XWp" firstAttribute="top" relation="greaterThanOrEqual" secondItem="3q8-kA-Xsp" secondAttribute="bottom" constant="20" id="KQo-Ib-Bhj"/>
+                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="KNY-GJ-XWp" secondAttribute="bottom" constant="30" id="KpT-NH-WLl"/>
+                                            <constraint firstItem="3q8-kA-Xsp" firstAttribute="top" secondItem="uxH-y2-wlq" secondAttribute="bottom" constant="20" id="Uwo-er-4Ce"/>
+                                            <constraint firstItem="pHN-GN-Lb3" firstAttribute="top" secondItem="Fgr-23-UhF" secondAttribute="top" constant="24" id="Xuy-Z2-ykf"/>
+                                            <constraint firstItem="pHN-GN-Lb3" firstAttribute="centerX" secondItem="Fgr-23-UhF" secondAttribute="centerX" constant="15" id="ZuQ-36-sdJ"/>
+                                            <constraint firstItem="KNY-GJ-XWp" firstAttribute="centerX" secondItem="Fgr-23-UhF" secondAttribute="centerX" id="bdL-fI-e7k"/>
+                                            <constraint firstItem="DBW-nP-gf8" firstAttribute="top" secondItem="FiW-wb-rt4" secondAttribute="bottom" constant="20" id="c6p-ca-9b4"/>
+                                            <constraint firstItem="FiW-wb-rt4" firstAttribute="top" secondItem="pHN-GN-Lb3" secondAttribute="bottom" constant="26" id="fp6-Y7-bbp"/>
+                                            <constraint firstItem="uxH-y2-wlq" firstAttribute="centerX" secondItem="Fgr-23-UhF" secondAttribute="centerX" id="naq-V8-ygr"/>
+                                            <constraint firstItem="3q8-kA-Xsp" firstAttribute="leading" secondItem="Fgr-23-UhF" secondAttribute="leading" constant="20" id="ppv-Yr-xUo"/>
+                                            <constraint firstAttribute="trailing" secondItem="FiW-wb-rt4" secondAttribute="trailing" constant="20" id="q4f-gy-M8z"/>
+                                            <constraint firstItem="DBW-nP-gf8" firstAttribute="leading" secondItem="Fgr-23-UhF" secondAttribute="leading" constant="20" id="xTs-zI-lBi"/>
+                                            <constraint firstAttribute="bottom" secondItem="KNY-GJ-XWp" secondAttribute="bottom" priority="998" constant="30" id="yav-mL-Qk4"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Fgr-23-UhF" firstAttribute="leading" secondItem="KSX-dJ-zWs" secondAttribute="leading" id="42U-0E-HZa"/>
+                                    <constraint firstAttribute="trailing" secondItem="Fgr-23-UhF" secondAttribute="trailing" id="CmY-VT-D3s"/>
+                                    <constraint firstItem="Fgr-23-UhF" firstAttribute="height" secondItem="KSX-dJ-zWs" secondAttribute="height" priority="750" id="SqN-Wr-0gq"/>
+                                    <constraint firstItem="Fgr-23-UhF" firstAttribute="width" secondItem="KSX-dJ-zWs" secondAttribute="width" id="au0-O8-37n"/>
+                                    <constraint firstAttribute="bottom" secondItem="Fgr-23-UhF" secondAttribute="bottom" id="cqd-1n-kZn"/>
+                                    <constraint firstItem="Fgr-23-UhF" firstAttribute="top" secondItem="KSX-dJ-zWs" secondAttribute="top" id="d1H-Ff-vO4"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KSX-dJ-zWs" firstAttribute="leading" secondItem="jRw-Jj-N0y" secondAttribute="leading" id="5nP-Pm-5fi"/>
+                            <constraint firstItem="BVp-h2-ccg" firstAttribute="top" secondItem="KNY-GJ-XWp" secondAttribute="bottom" priority="750" constant="30" id="Elc-ml-20n"/>
+                            <constraint firstItem="KSX-dJ-zWs" firstAttribute="top" secondItem="YMh-3k-6pz" secondAttribute="bottom" id="IHn-W5-eMb"/>
+                            <constraint firstItem="BVp-h2-ccg" firstAttribute="top" secondItem="KSX-dJ-zWs" secondAttribute="bottom" id="cTB-n9-VmO"/>
+                            <constraint firstAttribute="trailing" secondItem="KSX-dJ-zWs" secondAttribute="trailing" id="piO-Cg-DJg"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <connections>
+                        <segue destination="1fi-vH-sz9" kind="show" id="oWO-db-MBz"/>
+                        <segue destination="OKc-6F-CcW" kind="show" id="aPP-b8-22k"/>
+                        <segue destination="Hd0-ML-rhh" kind="show" identifier="toWasherFound" id="Y8r-kK-93f"/>
+                        <segue destination="k6s-9P-0PR" kind="show" id="ufN-uM-i4n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pU6-sX-9as" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1276" y="-1315"/>
+        </scene>
+        <!--Washer Found View Controller-->
+        <scene sceneID="Gqw-Dx-qOd">
+            <objects>
+                <viewController storyboardIdentifier="WasherFoundViewController" id="Hd0-ML-rhh" customClass="WasherFoundViewController" customModule="KneetlyUserApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="A5K-9u-4pi"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mke-bc-VwN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0Ns-9H-D1F">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8OC-ZG-Bmf">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oBT-56-zv7">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="598"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="254" verticalCompressionResistancePriority="1000" image="kneetlyLogoLarge" translatesAutoresizingMaskIntoConstraints="NO" id="7Em-Lk-Ctv">
+                                                <rect key="frame" x="73" y="24" width="260" height="66"/>
+                                            </imageView>
+                                            <label opaque="NO" contentMode="left" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oXc-Na-Kqu">
+                                                <rect key="frame" x="20" y="120" width="335" height="0.0"/>
+                                                <fontDescription key="fontDescription" name="Gibson-Regular" family="Gibson" pointSize="21"/>
+                                                <color key="textColor" red="0.45882352939999999" green="0.70588235290000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedTextKey" value="washer-found.washer-found-label.text"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xpu-sS-dUB" customClass="WasherInfoView" customModule="KneetlyUserApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="120" width="375" height="348"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="254" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="YHf-2m-u8d">
+                                                        <rect key="frame" x="111" y="20" width="154" height="154"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="154" id="JHH-mH-MzL"/>
+                                                            <constraint firstAttribute="height" constant="154" id="QBy-if-1sO"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="253" verticalCompressionResistancePriority="1000" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="POy-VV-ik4" customClass="ActiveLabel" customModule="ActiveLabel">
+                                                        <rect key="frame" x="20" y="190" width="335" height="103"/>
+                                                        <fontDescription key="fontDescription" name="Gibson-Light" family="Gibson" pointSize="21"/>
+                                                        <color key="textColor" red="0.20000000000000001" green="0.3803921569" blue="0.49019607840000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="lineSpacing">
+                                                                <real key="value" value="6"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                    <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ww1-nn-zxb" customClass="HCSStarRatingView">
+                                                        <rect key="frame" x="122" y="304" width="132" height="24"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <color key="tintColor" red="1" green="0.36078431370000003" blue="0.058823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="24" id="6UR-e8-THX"/>
+                                                            <constraint firstAttribute="width" constant="132" id="xUn-kU-4Hj"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="ww1-nn-zxb" secondAttribute="bottom" constant="20" id="4yQ-6e-Onj"/>
+                                                    <constraint firstItem="ww1-nn-zxb" firstAttribute="top" secondItem="POy-VV-ik4" secondAttribute="bottom" constant="11" id="5bW-Vn-bDk"/>
+                                                    <constraint firstAttribute="trailing" secondItem="POy-VV-ik4" secondAttribute="trailing" constant="20" id="OyU-ow-nVt"/>
+                                                    <constraint firstItem="ww1-nn-zxb" firstAttribute="centerX" secondItem="xpu-sS-dUB" secondAttribute="centerX" id="UHx-EO-wRb"/>
+                                                    <constraint firstItem="POy-VV-ik4" firstAttribute="leading" secondItem="xpu-sS-dUB" secondAttribute="leading" constant="20" id="WvY-1m-JYy"/>
+                                                    <constraint firstItem="YHf-2m-u8d" firstAttribute="top" secondItem="xpu-sS-dUB" secondAttribute="top" constant="20" id="fXX-Ga-kpj"/>
+                                                    <constraint firstItem="YHf-2m-u8d" firstAttribute="centerX" secondItem="xpu-sS-dUB" secondAttribute="centerX" id="hZX-BT-o8B"/>
+                                                    <constraint firstItem="POy-VV-ik4" firstAttribute="top" secondItem="YHf-2m-u8d" secondAttribute="bottom" constant="16" id="qQh-1q-rwK"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outlet property="avatarImageView" destination="YHf-2m-u8d" id="LWv-MX-fhn"/>
+                                                    <outlet property="nameLabel" destination="POy-VV-ik4" id="ZQx-ip-ff8"/>
+                                                    <outlet property="ratingView" destination="ww1-nn-zxb" id="q08-IV-Djl"/>
+                                                </connections>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RUb-vz-TYZ" customClass="KneetlyButton" customModule="KneetlyCommon">
+                                                <rect key="frame" x="173" y="488" width="30" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="uJu-jj-xox"/>
+                                                </constraints>
+                                                <color key="tintColor" red="0.28235294119999998" green="0.98431372549999996" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedTitleKey" value="washer-found.confirm-button.title"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="horizontalInsets">
+                                                        <real key="value" value="44"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="16.5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                        <real key="value" value="25"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="confirmWasherButtonTapped:" destination="Hd0-ML-rhh" eventType="touchUpInside" id="P5o-cR-9Kk"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DBz-Fw-t4k" customClass="KneetlyButton" customModule="KneetlyCommon">
+                                                <rect key="frame" x="173" y="541" width="30" height="33"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="33" id="9ft-G5-OQF"/>
+                                                </constraints>
+                                                <color key="tintColor" red="1" green="0.36078431370000003" blue="0.058823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedTitleKey" value="washer-found.cancel-button.title"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="horizontalInsets">
+                                                        <real key="value" value="11"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                        <real key="value" value="21"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="16.5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="cancelButtonTapped:" destination="Hd0-ML-rhh" eventType="touchUpInside" id="7QX-0C-Cdg"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="oXc-Na-Kqu" firstAttribute="top" secondItem="7Em-Lk-Ctv" secondAttribute="bottom" constant="30" id="0N0-8E-BRh"/>
+                                            <constraint firstItem="7Em-Lk-Ctv" firstAttribute="top" secondItem="oBT-56-zv7" secondAttribute="top" constant="24" id="0vG-c1-K79"/>
+                                            <constraint firstItem="RUb-vz-TYZ" firstAttribute="centerX" secondItem="oBT-56-zv7" secondAttribute="centerX" id="2cl-dl-yjK"/>
+                                            <constraint firstItem="oXc-Na-Kqu" firstAttribute="leading" secondItem="oBT-56-zv7" secondAttribute="leading" constant="20" id="8ig-Zq-oFr"/>
+                                            <constraint firstAttribute="trailing" secondItem="xpu-sS-dUB" secondAttribute="trailing" id="CSQ-n2-r1o"/>
+                                            <constraint firstAttribute="trailing" secondItem="oXc-Na-Kqu" secondAttribute="trailing" constant="20" id="DzV-1b-q7e"/>
+                                            <constraint firstItem="7Em-Lk-Ctv" firstAttribute="centerX" secondItem="oBT-56-zv7" secondAttribute="centerX" constant="15" id="FcR-u9-FcN"/>
+                                            <constraint firstItem="DBz-Fw-t4k" firstAttribute="top" secondItem="RUb-vz-TYZ" secondAttribute="bottom" constant="13" id="V6d-eX-hiq"/>
+                                            <constraint firstItem="RUb-vz-TYZ" firstAttribute="top" secondItem="xpu-sS-dUB" secondAttribute="bottom" priority="998" constant="20" id="Vm5-sd-fuT"/>
+                                            <constraint firstItem="DBz-Fw-t4k" firstAttribute="centerX" secondItem="oBT-56-zv7" secondAttribute="centerX" id="aGM-8T-Rbp"/>
+                                            <constraint firstAttribute="bottom" secondItem="DBz-Fw-t4k" secondAttribute="bottom" priority="998" constant="24" id="duw-G5-8mt"/>
+                                            <constraint firstItem="xpu-sS-dUB" firstAttribute="leading" secondItem="oBT-56-zv7" secondAttribute="leading" id="gzw-3N-dfL"/>
+                                            <constraint firstItem="xpu-sS-dUB" firstAttribute="top" secondItem="oXc-Na-Kqu" secondAttribute="bottom" id="nly-7J-NDi"/>
+                                            <constraint firstItem="RUb-vz-TYZ" firstAttribute="top" relation="greaterThanOrEqual" secondItem="xpu-sS-dUB" secondAttribute="bottom" constant="20" id="o3t-qd-ubX"/>
+                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="DBz-Fw-t4k" secondAttribute="bottom" constant="24" id="xo6-yX-JAA"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="oBT-56-zv7" firstAttribute="leading" secondItem="8OC-ZG-Bmf" secondAttribute="leading" id="4jd-Ya-Wdl"/>
+                                    <constraint firstItem="oBT-56-zv7" firstAttribute="height" secondItem="8OC-ZG-Bmf" secondAttribute="height" priority="750" id="K1P-7W-md8"/>
+                                    <constraint firstAttribute="bottom" secondItem="oBT-56-zv7" secondAttribute="bottom" id="Ta0-NP-IhV"/>
+                                    <constraint firstAttribute="trailing" secondItem="oBT-56-zv7" secondAttribute="trailing" id="WEm-X4-VSB"/>
+                                    <constraint firstItem="oBT-56-zv7" firstAttribute="top" secondItem="8OC-ZG-Bmf" secondAttribute="top" id="e3R-ws-lcv"/>
+                                    <constraint firstItem="oBT-56-zv7" firstAttribute="width" secondItem="8OC-ZG-Bmf" secondAttribute="width" id="y3d-L9-9U5"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="8OC-ZG-Bmf" secondAttribute="trailing" id="5Qa-ZZ-qcI"/>
+                            <constraint firstItem="Mke-bc-VwN" firstAttribute="top" secondItem="DBz-Fw-t4k" secondAttribute="bottom" priority="750" constant="24" id="ET8-3t-ZRz"/>
+                            <constraint firstItem="8OC-ZG-Bmf" firstAttribute="leading" secondItem="0Ns-9H-D1F" secondAttribute="leading" id="FOp-mv-RyJ"/>
+                            <constraint firstItem="Mke-bc-VwN" firstAttribute="top" secondItem="8OC-ZG-Bmf" secondAttribute="bottom" id="SC2-Yy-hu9"/>
+                            <constraint firstItem="8OC-ZG-Bmf" firstAttribute="top" secondItem="A5K-9u-4pi" secondAttribute="bottom" id="lYo-BY-m2F"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <connections>
+                        <outlet property="washerInfoView" destination="xpu-sS-dUB" id="8Md-gf-aaz"/>
+                        <segue destination="m5K-E8-fhG" kind="show" identifier="toWasherIncomingOrWaiting" id="Ivn-yL-JiE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1fV-dK-rua" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2996" y="-824"/>
+        </scene>
+        <!--No Washer Found View Controller-->
+        <scene sceneID="DX5-59-t4e">
+            <objects>
+                <viewController storyboardIdentifier="NoWasherFoundViewController" id="k6s-9P-0PR" customClass="NoWasherFoundViewController" customModule="KneetlyUserApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LqL-LF-cOG"/>
+                        <viewControllerLayoutGuide type="bottom" id="QCa-HS-BGE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="58P-42-AI9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ns-LJ-84b">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PcZ-MA-DHr">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="598"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="254" verticalCompressionResistancePriority="1000" image="kneetlyLogoLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Ujr-XL-qsC">
+                                                <rect key="frame" x="73" y="24" width="260" height="66"/>
+                                            </imageView>
+                                            <label opaque="NO" contentMode="left" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VmS-E2-hjw" customClass="ActiveLabel" customModule="ActiveLabel">
+                                                <rect key="frame" x="20" y="116" width="335" height="14"/>
+                                                <fontDescription key="fontDescription" name="Gibson-Regular" family="Gibson" pointSize="21"/>
+                                                <color key="textColor" red="0.45882352939999999" green="0.70588235290000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedTextKey" value="no-washer-found.try-again-label.text"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="lineSpacing">
+                                                        <real key="value" value="7"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="254" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" image="triggerSprayDeadpanLarge" translatesAutoresizingMaskIntoConstraints="NO" id="ebI-is-DeJ">
+                                                <rect key="frame" x="148" y="144" width="80" height="164"/>
+                                            </imageView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="feb-Am-GYk">
+                                                <rect key="frame" x="0.0" y="308" width="375" height="177"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dqo-dB-Q7x" customClass="KneetlyButton" customModule="KneetlyCommon">
+                                                <rect key="frame" x="173" y="525" width="30" height="33"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="33" id="GvR-u0-Kfe"/>
+                                                </constraints>
+                                                <color key="tintColor" red="1" green="0.36078431370000003" blue="0.058823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedTitleKey" value="no-washer-found.cancel-button.title"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="horizontalInsets">
+                                                        <real key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                        <real key="value" value="21"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="16.5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="cancelButtonTapped:" destination="k6s-9P-0PR" eventType="touchUpInside" id="gab-pT-BIp"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="Ujr-XL-qsC" firstAttribute="top" secondItem="PcZ-MA-DHr" secondAttribute="top" constant="24" id="0Eh-3N-GTa"/>
+                                            <constraint firstAttribute="trailing" secondItem="feb-Am-GYk" secondAttribute="trailing" id="4jB-hv-b2K"/>
+                                            <constraint firstItem="dqo-dB-Q7x" firstAttribute="top" relation="greaterThanOrEqual" secondItem="feb-Am-GYk" secondAttribute="bottom" constant="40" id="5ci-of-hkp"/>
+                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="dqo-dB-Q7x" secondAttribute="bottom" constant="40" id="8X0-QY-gwz"/>
+                                            <constraint firstItem="dqo-dB-Q7x" firstAttribute="centerX" secondItem="PcZ-MA-DHr" secondAttribute="centerX" id="Kg5-m5-99a"/>
+                                            <constraint firstItem="VmS-E2-hjw" firstAttribute="leading" secondItem="PcZ-MA-DHr" secondAttribute="leading" constant="20" id="KvX-o5-yGA"/>
+                                            <constraint firstAttribute="trailing" secondItem="VmS-E2-hjw" secondAttribute="trailing" constant="20" id="NHu-qq-vF2"/>
+                                            <constraint firstItem="feb-Am-GYk" firstAttribute="top" secondItem="ebI-is-DeJ" secondAttribute="bottom" id="TSL-iL-hMI"/>
+                                            <constraint firstItem="dqo-dB-Q7x" firstAttribute="top" secondItem="feb-Am-GYk" secondAttribute="bottom" priority="998" constant="40" id="YOw-kz-A9S"/>
+                                            <constraint firstItem="Ujr-XL-qsC" firstAttribute="centerX" secondItem="PcZ-MA-DHr" secondAttribute="centerX" constant="15" id="ZMX-Iw-wol"/>
+                                            <constraint firstItem="VmS-E2-hjw" firstAttribute="top" secondItem="Ujr-XL-qsC" secondAttribute="bottom" constant="26" id="bfE-oZ-9kQ"/>
+                                            <constraint firstItem="ebI-is-DeJ" firstAttribute="top" secondItem="VmS-E2-hjw" secondAttribute="bottom" constant="14" id="dsb-Ax-h5V"/>
+                                            <constraint firstItem="feb-Am-GYk" firstAttribute="leading" secondItem="PcZ-MA-DHr" secondAttribute="leading" id="jir-Au-dsz"/>
+                                            <constraint firstAttribute="bottom" secondItem="dqo-dB-Q7x" secondAttribute="bottom" priority="998" constant="40" id="nKR-Ud-CKW"/>
+                                            <constraint firstItem="ebI-is-DeJ" firstAttribute="centerX" secondItem="PcZ-MA-DHr" secondAttribute="centerX" id="qvQ-bQ-JOH"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="PcZ-MA-DHr" firstAttribute="top" secondItem="8ns-LJ-84b" secondAttribute="top" id="DPY-WI-CXR"/>
+                                    <constraint firstItem="PcZ-MA-DHr" firstAttribute="width" secondItem="8ns-LJ-84b" secondAttribute="width" id="HrW-gJ-wch"/>
+                                    <constraint firstAttribute="trailing" secondItem="PcZ-MA-DHr" secondAttribute="trailing" id="Mpe-8e-1I7"/>
+                                    <constraint firstItem="PcZ-MA-DHr" firstAttribute="height" secondItem="8ns-LJ-84b" secondAttribute="height" priority="750" id="WAv-rg-Dhl"/>
+                                    <constraint firstAttribute="bottom" secondItem="PcZ-MA-DHr" secondAttribute="bottom" id="qyr-65-Oo1"/>
+                                    <constraint firstItem="PcZ-MA-DHr" firstAttribute="leading" secondItem="8ns-LJ-84b" secondAttribute="leading" id="vik-Qv-85x"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8ns-LJ-84b" firstAttribute="leading" secondItem="58P-42-AI9" secondAttribute="leading" id="7TW-un-n81"/>
+                            <constraint firstItem="QCa-HS-BGE" firstAttribute="top" secondItem="8ns-LJ-84b" secondAttribute="bottom" id="GyG-nB-5pu"/>
+                            <constraint firstItem="8ns-LJ-84b" firstAttribute="top" secondItem="LqL-LF-cOG" secondAttribute="bottom" id="HvB-Lh-kCH"/>
+                            <constraint firstItem="QCa-HS-BGE" firstAttribute="top" secondItem="dqo-dB-Q7x" secondAttribute="bottom" priority="750" constant="40" id="Kp4-zW-Upe"/>
+                            <constraint firstAttribute="trailing" secondItem="8ns-LJ-84b" secondAttribute="trailing" id="lMi-b6-l6h"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u1N-Cg-M2s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2996" y="9"/>
+        </scene>
+        <!--Washer Unavailable View Controller-->
+        <scene sceneID="etL-6z-rIV">
+            <objects>
+                <viewController storyboardIdentifier="WasherUnavailableViewController" id="OKc-6F-CcW" customClass="WasherUnavailableViewController" customModule="KneetlyUserApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xkk-vL-QUG"/>
+                        <viewControllerLayoutGuide type="bottom" id="QvJ-F7-ufN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Eoa-x4-wg9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ryN-Z4-RHt">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T6z-Ma-BQM">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="598"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="254" verticalCompressionResistancePriority="1000" image="kneetlyLogoLarge" translatesAutoresizingMaskIntoConstraints="NO" id="JyI-fO-r2O">
+                                                <rect key="frame" x="73" y="24" width="260" height="66"/>
+                                            </imageView>
+                                            <label opaque="NO" contentMode="left" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RTO-pu-uuR" customClass="ActiveLabel" customModule="ActiveLabel">
+                                                <rect key="frame" x="20" y="116" width="335" height="14"/>
+                                                <fontDescription key="fontDescription" name="Gibson-Regular" family="Gibson" pointSize="21"/>
+                                                <color key="textColor" red="0.45882352939999999" green="0.70588235290000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedTextKey" value="washer-unavailable.washer-unavailable-label.text"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="lineSpacing">
+                                                        <real key="value" value="7"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="254" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" image="bubbleBottleDeadpanLarge" translatesAutoresizingMaskIntoConstraints="NO" id="frz-q4-fiU">
+                                                <rect key="frame" x="145" y="144" width="85" height="193"/>
+                                            </imageView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tbw-hA-cdp">
+                                                <rect key="frame" x="0.0" y="337" width="375" height="104"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yv0-oG-giI" customClass="KneetlyButton" customModule="KneetlyCommon">
+                                                <rect key="frame" x="173" y="481" width="30" height="33"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="33" id="AOi-6d-UHh"/>
+                                                </constraints>
+                                                <color key="tintColor" red="0.28235294119999998" green="0.98431372549999996" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedTitleKey" value="washer-unavailable.choose-button.title"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="horizontalInsets">
+                                                        <real key="value" value="16"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                        <real key="value" value="21"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="16.5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="chooseAnotherWasher" destination="OKc-6F-CcW" eventType="touchUpInside" id="u2n-6y-77z"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F9K-rx-Zav" customClass="KneetlyButton" customModule="KneetlyCommon">
+                                                <rect key="frame" x="173" y="530" width="30" height="28"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="28" id="zRZ-R3-4hz"/>
+                                                </constraints>
+                                                <color key="tintColor" red="1" green="0.36078431370000003" blue="0.058823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedTitleKey" value="washer-unavailable.cancel-button.title"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                        <real key="value" value="18"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="horizontalInsets">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="14"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="cancelButtonTapped:" destination="OKc-6F-CcW" eventType="touchUpInside" id="nyY-Wz-jUT"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="JyI-fO-r2O" firstAttribute="centerX" secondItem="T6z-Ma-BQM" secondAttribute="centerX" constant="15" id="2Bp-NJ-zJP"/>
+                                            <constraint firstItem="F9K-rx-Zav" firstAttribute="centerX" secondItem="T6z-Ma-BQM" secondAttribute="centerX" id="6A0-Ls-ldE"/>
+                                            <constraint firstItem="JyI-fO-r2O" firstAttribute="top" secondItem="T6z-Ma-BQM" secondAttribute="top" constant="24" id="79R-5o-nSX"/>
+                                            <constraint firstItem="Yv0-oG-giI" firstAttribute="top" secondItem="Tbw-hA-cdp" secondAttribute="bottom" priority="998" constant="40" id="7x2-Hf-yjH"/>
+                                            <constraint firstItem="Tbw-hA-cdp" firstAttribute="leading" secondItem="T6z-Ma-BQM" secondAttribute="leading" id="FKv-RK-zBv"/>
+                                            <constraint firstItem="frz-q4-fiU" firstAttribute="top" secondItem="RTO-pu-uuR" secondAttribute="bottom" constant="14" id="HdX-bh-fOC"/>
+                                            <constraint firstItem="RTO-pu-uuR" firstAttribute="top" secondItem="JyI-fO-r2O" secondAttribute="bottom" constant="26" id="HyP-CK-xWV"/>
+                                            <constraint firstItem="Yv0-oG-giI" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Tbw-hA-cdp" secondAttribute="bottom" constant="40" id="Jze-gi-kTq"/>
+                                            <constraint firstAttribute="trailing" secondItem="Tbw-hA-cdp" secondAttribute="trailing" id="L6K-tt-Onp"/>
+                                            <constraint firstItem="frz-q4-fiU" firstAttribute="centerX" secondItem="T6z-Ma-BQM" secondAttribute="centerX" id="NpW-wi-74Q"/>
+                                            <constraint firstItem="RTO-pu-uuR" firstAttribute="leading" secondItem="T6z-Ma-BQM" secondAttribute="leading" constant="20" id="P8V-VT-lB6"/>
+                                            <constraint firstItem="Tbw-hA-cdp" firstAttribute="top" secondItem="frz-q4-fiU" secondAttribute="bottom" id="RDD-EW-Jj4"/>
+                                            <constraint firstAttribute="bottom" secondItem="F9K-rx-Zav" secondAttribute="bottom" priority="998" constant="40" id="T2T-Gd-WkE"/>
+                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="F9K-rx-Zav" secondAttribute="bottom" constant="40" id="UMB-OD-PNm"/>
+                                            <constraint firstAttribute="trailing" secondItem="RTO-pu-uuR" secondAttribute="trailing" constant="20" id="iZ7-Qo-ssb"/>
+                                            <constraint firstItem="Yv0-oG-giI" firstAttribute="centerX" secondItem="T6z-Ma-BQM" secondAttribute="centerX" id="lxk-3A-4xa"/>
+                                            <constraint firstItem="F9K-rx-Zav" firstAttribute="top" secondItem="Yv0-oG-giI" secondAttribute="bottom" constant="16" id="uvF-qy-raf"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="T6z-Ma-BQM" firstAttribute="height" secondItem="ryN-Z4-RHt" secondAttribute="height" priority="750" id="Hau-O6-y5q"/>
+                                    <constraint firstAttribute="trailing" secondItem="T6z-Ma-BQM" secondAttribute="trailing" id="Lcc-bi-Rww"/>
+                                    <constraint firstItem="T6z-Ma-BQM" firstAttribute="top" secondItem="ryN-Z4-RHt" secondAttribute="top" id="ncu-OE-cyR"/>
+                                    <constraint firstAttribute="bottom" secondItem="T6z-Ma-BQM" secondAttribute="bottom" id="qGy-wu-ig7"/>
+                                    <constraint firstItem="T6z-Ma-BQM" firstAttribute="leading" secondItem="ryN-Z4-RHt" secondAttribute="leading" id="yfk-5h-jOp"/>
+                                    <constraint firstItem="T6z-Ma-BQM" firstAttribute="width" secondItem="ryN-Z4-RHt" secondAttribute="width" id="zMn-YP-gPh"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ryN-Z4-RHt" secondAttribute="trailing" id="1q0-Vm-gt6"/>
+                            <constraint firstItem="QvJ-F7-ufN" firstAttribute="top" secondItem="ryN-Z4-RHt" secondAttribute="bottom" id="SyN-Hz-M4V"/>
+                            <constraint firstItem="QvJ-F7-ufN" firstAttribute="top" secondItem="F9K-rx-Zav" secondAttribute="bottom" priority="750" constant="40" id="X6y-lu-EdC"/>
+                            <constraint firstItem="ryN-Z4-RHt" firstAttribute="leading" secondItem="Eoa-x4-wg9" secondAttribute="leading" id="fVl-KG-Vcg"/>
+                            <constraint firstItem="ryN-Z4-RHt" firstAttribute="top" secondItem="xkk-vL-QUG" secondAttribute="bottom" id="rLL-2a-zBH"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nyy-8i-gYn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2996" y="-1536"/>
+        </scene>
+        <!--Washer Not Replied View Controller-->
+        <scene sceneID="B2v-Le-THo">
+            <objects>
+                <viewController storyboardIdentifier="WasherNotRepliedViewController" id="1fi-vH-sz9" customClass="WasherNotRepliedViewController" customModule="KneetlyUserApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ao5-6h-gda"/>
+                        <viewControllerLayoutGuide type="bottom" id="e7N-AE-AqL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Xgq-Cm-g23">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5tL-dm-sob">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pNk-Pl-EBW">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="598"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="254" verticalCompressionResistancePriority="1000" image="kneetlyLogoLarge" translatesAutoresizingMaskIntoConstraints="NO" id="AAu-lK-cR1">
+                                                <rect key="frame" x="73" y="24" width="260" height="66"/>
+                                            </imageView>
+                                            <label opaque="NO" contentMode="left" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wCw-cf-DUo" customClass="ActiveLabel" customModule="ActiveLabel">
+                                                <rect key="frame" x="20" y="116" width="335" height="14"/>
+                                                <fontDescription key="fontDescription" name="Gibson-Regular" family="Gibson" pointSize="21"/>
+                                                <color key="textColor" red="0.45882352939999999" green="0.70588235290000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedTextKey" value="washer-not-replied.washer-not-replied-label.text"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="lineSpacing">
+                                                        <real key="value" value="7"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="254" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" image="bucketDeadpanLarge" translatesAutoresizingMaskIntoConstraints="NO" id="pBj-aM-RHh">
+                                                <rect key="frame" x="130" y="144" width="116" height="148"/>
+                                            </imageView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o1J-mo-WGd">
+                                                <rect key="frame" x="0.0" y="292" width="375" height="110"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R64-aC-Esa" customClass="KneetlyButton" customModule="KneetlyCommon">
+                                                <rect key="frame" x="173" y="442" width="30" height="33"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="33" id="A4I-Cb-He3"/>
+                                                </constraints>
+                                                <color key="tintColor" red="0.28235294119999998" green="0.98431372549999996" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedTitleKey" value="washer-not-replied.keep-waiting-button.title"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                        <real key="value" value="21"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="horizontalInsets">
+                                                        <real key="value" value="25"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="16.5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="keepWaiting" destination="1fi-vH-sz9" eventType="touchUpInside" id="jar-Di-W83"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yqe-63-E3N" customClass="KneetlyButton" customModule="KneetlyCommon">
+                                                <rect key="frame" x="173" y="487" width="30" height="33"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="33" id="fDI-xZ-iOc"/>
+                                                </constraints>
+                                                <color key="tintColor" red="0.28235294119999998" green="0.98431372549999996" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedTitleKey" value="washer-not-replied.choose-another-button.title"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                        <real key="value" value="21"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="horizontalInsets">
+                                                        <real key="value" value="18"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="16.5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="chooseAnotherWasher" destination="1fi-vH-sz9" eventType="touchUpInside" id="tUk-K0-crU"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6MQ-0J-XSv">
+                                                <rect key="frame" x="173" y="528" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="77N-2N-6y3"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Gibson-Light" family="Gibson" pointSize="18"/>
+                                                <color key="tintColor" red="1" green="0.36078431370000003" blue="0.058823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="1" green="0.36078431370000003" blue="0.058823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedTitleKey" value="washer-not-replied.cancel-button.title"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="cancelButtonTapped:" destination="1fi-vH-sz9" eventType="touchUpInside" id="5Tb-F9-VUc"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="o1J-mo-WGd" firstAttribute="top" secondItem="pBj-aM-RHh" secondAttribute="bottom" id="1qO-Cq-vDS"/>
+                                            <constraint firstItem="AAu-lK-cR1" firstAttribute="centerX" secondItem="pNk-Pl-EBW" secondAttribute="centerX" constant="15" id="BaE-UR-cxy"/>
+                                            <constraint firstItem="R64-aC-Esa" firstAttribute="top" relation="greaterThanOrEqual" secondItem="o1J-mo-WGd" secondAttribute="bottom" constant="40" id="EO4-hg-d9C"/>
+                                            <constraint firstItem="R64-aC-Esa" firstAttribute="centerX" secondItem="pNk-Pl-EBW" secondAttribute="centerX" id="Kdd-Yd-YfQ"/>
+                                            <constraint firstItem="wCw-cf-DUo" firstAttribute="top" secondItem="AAu-lK-cR1" secondAttribute="bottom" constant="26" id="Tb9-aW-3vM"/>
+                                            <constraint firstItem="wCw-cf-DUo" firstAttribute="leading" secondItem="pNk-Pl-EBW" secondAttribute="leading" constant="20" id="WyO-Du-QVg"/>
+                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="6MQ-0J-XSv" secondAttribute="bottom" constant="40" id="Yjv-M0-PSQ"/>
+                                            <constraint firstAttribute="bottom" secondItem="6MQ-0J-XSv" secondAttribute="bottom" priority="998" constant="40" id="a04-hN-E1a"/>
+                                            <constraint firstAttribute="trailing" secondItem="o1J-mo-WGd" secondAttribute="trailing" id="aFw-rx-BCj"/>
+                                            <constraint firstItem="6MQ-0J-XSv" firstAttribute="centerX" secondItem="pNk-Pl-EBW" secondAttribute="centerX" id="arO-AD-67h"/>
+                                            <constraint firstAttribute="trailing" secondItem="wCw-cf-DUo" secondAttribute="trailing" constant="20" id="bLk-ye-xSr"/>
+                                            <constraint firstItem="pBj-aM-RHh" firstAttribute="top" secondItem="wCw-cf-DUo" secondAttribute="bottom" constant="14" id="f5e-PB-Hgb"/>
+                                            <constraint firstItem="R64-aC-Esa" firstAttribute="top" secondItem="o1J-mo-WGd" secondAttribute="bottom" priority="998" constant="40" id="kDI-jB-AtO"/>
+                                            <constraint firstItem="pBj-aM-RHh" firstAttribute="centerX" secondItem="pNk-Pl-EBW" secondAttribute="centerX" id="qhx-f8-iWh"/>
+                                            <constraint firstItem="o1J-mo-WGd" firstAttribute="leading" secondItem="pNk-Pl-EBW" secondAttribute="leading" id="sTN-AD-3tO"/>
+                                            <constraint firstItem="AAu-lK-cR1" firstAttribute="top" secondItem="pNk-Pl-EBW" secondAttribute="top" constant="24" id="tgH-A1-va9"/>
+                                            <constraint firstItem="yqe-63-E3N" firstAttribute="top" secondItem="R64-aC-Esa" secondAttribute="bottom" constant="12" id="xfw-0y-BZY"/>
+                                            <constraint firstItem="yqe-63-E3N" firstAttribute="centerX" secondItem="pNk-Pl-EBW" secondAttribute="centerX" id="xgy-6I-LtS"/>
+                                            <constraint firstItem="6MQ-0J-XSv" firstAttribute="top" secondItem="yqe-63-E3N" secondAttribute="bottom" constant="8" id="ypL-kl-txJ"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="pNk-Pl-EBW" secondAttribute="trailing" id="9me-6x-YgH"/>
+                                    <constraint firstItem="pNk-Pl-EBW" firstAttribute="leading" secondItem="5tL-dm-sob" secondAttribute="leading" id="T8W-Gs-aw8"/>
+                                    <constraint firstAttribute="bottom" secondItem="pNk-Pl-EBW" secondAttribute="bottom" id="YTd-21-3Jv"/>
+                                    <constraint firstItem="pNk-Pl-EBW" firstAttribute="top" secondItem="5tL-dm-sob" secondAttribute="top" id="hLw-vV-Avr"/>
+                                    <constraint firstItem="pNk-Pl-EBW" firstAttribute="height" secondItem="5tL-dm-sob" secondAttribute="height" priority="750" id="oyG-QQ-hrL"/>
+                                    <constraint firstItem="pNk-Pl-EBW" firstAttribute="width" secondItem="5tL-dm-sob" secondAttribute="width" id="yst-Zm-bp9"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5tL-dm-sob" firstAttribute="top" secondItem="ao5-6h-gda" secondAttribute="bottom" id="5f9-Oy-qPy"/>
+                            <constraint firstItem="e7N-AE-AqL" firstAttribute="top" secondItem="6MQ-0J-XSv" secondAttribute="bottom" priority="750" constant="40" id="Xdr-WZ-1KT"/>
+                            <constraint firstItem="e7N-AE-AqL" firstAttribute="top" secondItem="5tL-dm-sob" secondAttribute="bottom" id="Z2V-4z-5mR"/>
+                            <constraint firstItem="5tL-dm-sob" firstAttribute="leading" secondItem="Xgq-Cm-g23" secondAttribute="leading" id="nrw-Nu-6wS"/>
+                            <constraint firstAttribute="trailing" secondItem="5tL-dm-sob" secondAttribute="trailing" id="sX8-K3-JpK"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wGP-4j-iWa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2996" y="-2204.3478260869565"/>
+        </scene>
+        <!--Washer Incoming Or Waiting View Controller-->
+        <scene sceneID="Pb2-8T-YgP">
+            <objects>
+                <viewController storyboardIdentifier="WasherIncomingOrWaitingViewController" id="m5K-E8-fhG" customClass="WasherIncomingOrWaitingViewController" customModule="KneetlyUserApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jic-pz-QY1"/>
+                        <viewControllerLayoutGuide type="bottom" id="PC4-hR-501"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="L9i-oW-U10">
+                        <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jbd-Bl-9B7">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="155"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WaQ-3p-gNH">
+                                        <rect key="frame" x="20" y="17" width="335" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="Gibson-Regular" family="Gibson" pointSize="22"/>
+                                        <color key="textColor" red="0.45882352939999999" green="0.70588235290000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QgA-Rr-gnC" customClass="ActiveLabel" customModule="ActiveLabel">
+                                        <rect key="frame" x="20" y="28" width="335" height="14"/>
+                                        <fontDescription key="fontDescription" name="Gibson-Regular" family="Gibson" pointSize="15"/>
+                                        <color key="textColor" red="0.45882352939999999" green="0.70588235290000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="lineSpacing">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="35R-mU-rtw">
+                                        <rect key="frame" x="66" y="52" width="244" height="92"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bpT-4b-KVB">
+                                                <rect key="frame" x="0.0" y="0.0" width="94" height="92"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="92" id="61v-z2-A2w"/>
+                                                    <constraint firstAttribute="width" constant="94" id="z6E-8y-msW"/>
+                                                </constraints>
+                                            </imageView>
+                                            <view contentMode="scaleToFill" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="k6j-Da-NJy">
+                                                <rect key="frame" x="111" y="23" width="133" height="46"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" horizontalCompressionResistancePriority="999" verticalCompressionResistancePriority="999" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="he3-c4-FkI" customClass="ActiveLabel" customModule="ActiveLabel">
+                                                        <rect key="frame" x="0.0" y="0.0" width="133" height="14"/>
+                                                        <fontDescription key="fontDescription" name="Gibson-Light" family="Gibson" pointSize="17"/>
+                                                        <color key="textColor" red="0.45882352939999999" green="0.70588235290000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="lineSpacing">
+                                                                <real key="value" value="4"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                    <view userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="253" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="n0v-ap-aOU" customClass="HCSStarRatingView">
+                                                        <rect key="frame" x="1" y="22" width="132" height="24"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <color key="tintColor" red="1" green="0.36078431370000003" blue="0.058823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="24" id="N9v-f3-VSR"/>
+                                                            <constraint firstAttribute="width" constant="132" id="Qhg-x5-Xa4"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="n0v-ap-aOU" secondAttribute="bottom" id="B0X-H0-IPW"/>
+                                                    <constraint firstAttribute="trailing" secondItem="he3-c4-FkI" secondAttribute="trailing" id="Dhl-cj-yjC"/>
+                                                    <constraint firstItem="n0v-ap-aOU" firstAttribute="leading" secondItem="k6j-Da-NJy" secondAttribute="leading" priority="998" id="F98-bT-9zE"/>
+                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="n0v-ap-aOU" secondAttribute="trailing" id="Mfc-pM-2oL"/>
+                                                    <constraint firstItem="n0v-ap-aOU" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="k6j-Da-NJy" secondAttribute="leading" id="QFv-zB-E6f"/>
+                                                    <constraint firstItem="he3-c4-FkI" firstAttribute="top" secondItem="k6j-Da-NJy" secondAttribute="top" id="Qrd-tl-0di"/>
+                                                    <constraint firstItem="he3-c4-FkI" firstAttribute="leading" secondItem="k6j-Da-NJy" secondAttribute="leading" id="Vw0-T1-CrG"/>
+                                                    <constraint firstItem="n0v-ap-aOU" firstAttribute="centerX" secondItem="k6j-Da-NJy" secondAttribute="centerX" id="ZZR-fq-KBc"/>
+                                                    <constraint firstItem="n0v-ap-aOU" firstAttribute="top" secondItem="he3-c4-FkI" secondAttribute="bottom" constant="8" id="aNU-fg-Qw3"/>
+                                                    <constraint firstAttribute="trailing" secondItem="n0v-ap-aOU" secondAttribute="trailing" priority="998" id="yzx-ws-q3Y"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="bpT-4b-KVB" firstAttribute="top" secondItem="35R-mU-rtw" secondAttribute="top" id="Dbf-Ff-XmU"/>
+                                            <constraint firstAttribute="height" constant="92" id="TcY-cK-Q0B"/>
+                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="k6j-Da-NJy" secondAttribute="bottom" id="Wmm-ib-HoT"/>
+                                            <constraint firstItem="k6j-Da-NJy" firstAttribute="centerY" secondItem="35R-mU-rtw" secondAttribute="centerY" id="aKX-yy-0CZ"/>
+                                            <constraint firstItem="k6j-Da-NJy" firstAttribute="leading" secondItem="bpT-4b-KVB" secondAttribute="trailing" constant="17" id="dnJ-BM-LHJ"/>
+                                            <constraint firstItem="bpT-4b-KVB" firstAttribute="leading" secondItem="35R-mU-rtw" secondAttribute="leading" id="fyt-ZN-Vym"/>
+                                            <constraint firstItem="k6j-Da-NJy" firstAttribute="top" relation="greaterThanOrEqual" secondItem="35R-mU-rtw" secondAttribute="top" id="iAj-FH-d4G"/>
+                                            <constraint firstAttribute="bottom" secondItem="bpT-4b-KVB" secondAttribute="bottom" id="lQN-am-17f"/>
+                                            <constraint firstAttribute="trailing" secondItem="k6j-Da-NJy" secondAttribute="trailing" id="qvI-uG-Rrr"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="QgA-Rr-gnC" firstAttribute="top" secondItem="WaQ-3p-gNH" secondAttribute="bottom" constant="11" id="EwW-O8-wXd"/>
+                                    <constraint firstItem="35R-mU-rtw" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Jbd-Bl-9B7" secondAttribute="leading" constant="8" id="OdE-oP-UJc"/>
+                                    <constraint firstAttribute="trailing" secondItem="WaQ-3p-gNH" secondAttribute="trailing" constant="20" id="Oed-dU-eyH"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="35R-mU-rtw" secondAttribute="trailing" constant="8" id="Y44-Cf-sfe"/>
+                                    <constraint firstItem="35R-mU-rtw" firstAttribute="top" secondItem="QgA-Rr-gnC" secondAttribute="bottom" constant="10" id="cEK-xS-QdZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="35R-mU-rtw" secondAttribute="bottom" constant="11" id="dvq-kB-40Y"/>
+                                    <constraint firstItem="35R-mU-rtw" firstAttribute="centerX" secondItem="Jbd-Bl-9B7" secondAttribute="centerX" id="hoa-7H-wr5"/>
+                                    <constraint firstAttribute="trailing" secondItem="QgA-Rr-gnC" secondAttribute="trailing" constant="20" id="lX8-Pn-beg"/>
+                                    <constraint firstItem="WaQ-3p-gNH" firstAttribute="top" secondItem="Jbd-Bl-9B7" secondAttribute="top" constant="17" id="mM8-Ec-bbV"/>
+                                    <constraint firstItem="QgA-Rr-gnC" firstAttribute="leading" secondItem="Jbd-Bl-9B7" secondAttribute="leading" constant="20" id="myn-dv-Onk"/>
+                                    <constraint firstItem="WaQ-3p-gNH" firstAttribute="leading" secondItem="Jbd-Bl-9B7" secondAttribute="leading" constant="20" id="z9o-Rt-rrV"/>
+                                </constraints>
+                            </view>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ghQ-TE-x9s">
+                                <rect key="frame" x="0.0" y="155" width="375" height="300"/>
+                                <connections>
+                                    <outlet property="delegate" destination="m5K-E8-fhG" id="EDe-Ib-Z25"/>
+                                </connections>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="baq-qJ-Cb4" customClass="KneetlyButton" customModule="KneetlyCommon">
+                                <rect key="frame" x="173" y="471" width="30" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="JXE-TH-6AS"/>
+                                </constraints>
+                                <color key="tintColor" red="0.28235294119999998" green="0.98431372549999996" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedTitleKey" value="washer-incoming-or-waiting.pre-wash-check-button.title"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="horizontalInsets">
+                                        <real key="value" value="34"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="7pG-06-IJS" kind="show" identifier="toPreWashChecklist" id="7oH-ET-Mqu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HP7-33-oTh" customClass="KneetlyButton" customModule="KneetlyCommon">
+                                <rect key="frame" x="173" y="518" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="IaS-lR-aJo"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="0.36078431370000003" blue="0.058823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedTitleKey" value="washer-incoming-or-waiting.cancel-button.title"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="horizontalInsets">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="17"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="16.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="cancelButtonTapped:" destination="m5K-E8-fhG" eventType="touchUpInside" id="dDZ-iw-2SZ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bwh-dI-GSc">
+                                <rect key="frame" x="20" y="463" width="335" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Gibson-Light" family="Gibson" pointSize="22"/>
+                                <color key="textColor" red="0.45882352939999999" green="0.70588235290000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="bwh-dI-GSc" secondAttribute="trailing" constant="20" id="06B-Ca-lg2"/>
+                            <constraint firstItem="baq-qJ-Cb4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="L9i-oW-U10" secondAttribute="leading" constant="20" id="1Ol-FT-q96"/>
+                            <constraint firstItem="baq-qJ-Cb4" firstAttribute="top" secondItem="bwh-dI-GSc" secondAttribute="bottom" constant="8" id="3dd-Bg-i2g"/>
+                            <constraint firstAttribute="trailing" secondItem="ghQ-TE-x9s" secondAttribute="trailing" id="AxE-yq-Wvb"/>
+                            <constraint firstItem="HP7-33-oTh" firstAttribute="centerX" secondItem="L9i-oW-U10" secondAttribute="centerX" id="Kmt-uh-kip"/>
+                            <constraint firstItem="HP7-33-oTh" firstAttribute="top" secondItem="baq-qJ-Cb4" secondAttribute="bottom" constant="6" id="My8-Dd-ZSk"/>
+                            <constraint firstItem="bwh-dI-GSc" firstAttribute="top" secondItem="ghQ-TE-x9s" secondAttribute="bottom" constant="8" id="O3Q-L1-v2u"/>
+                            <constraint firstItem="Jbd-Bl-9B7" firstAttribute="leading" secondItem="L9i-oW-U10" secondAttribute="leading" id="aXL-pN-8cE"/>
+                            <constraint firstAttribute="trailing" secondItem="Jbd-Bl-9B7" secondAttribute="trailing" id="and-CD-BqC"/>
+                            <constraint firstItem="baq-qJ-Cb4" firstAttribute="centerX" secondItem="L9i-oW-U10" secondAttribute="centerX" id="dau-hU-z8Q"/>
+                            <constraint firstItem="bwh-dI-GSc" firstAttribute="leading" secondItem="L9i-oW-U10" secondAttribute="leading" constant="20" id="dbv-G1-7ye"/>
+                            <constraint firstItem="PC4-hR-501" firstAttribute="top" secondItem="HP7-33-oTh" secondAttribute="bottom" constant="6" id="eTj-nB-5di"/>
+                            <constraint firstItem="Jbd-Bl-9B7" firstAttribute="top" secondItem="jic-pz-QY1" secondAttribute="bottom" id="qxE-uT-piP"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="baq-qJ-Cb4" secondAttribute="trailing" constant="20" id="sUq-ct-NOB"/>
+                            <constraint firstItem="ghQ-TE-x9s" firstAttribute="leading" secondItem="L9i-oW-U10" secondAttribute="leading" id="xaV-ZN-K74"/>
+                            <constraint firstItem="ghQ-TE-x9s" firstAttribute="top" secondItem="Jbd-Bl-9B7" secondAttribute="bottom" id="z9n-rE-Tzp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="xUu-1E-bSs">
+                        <barButtonItem key="backBarButtonItem" title="back" id="xd4-pM-46w"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <connections>
+                        <outlet property="addressLabel" destination="bwh-dI-GSc" id="HnW-qF-f4M"/>
+                        <outlet property="mapView" destination="ghQ-TE-x9s" id="mIA-8y-qqM"/>
+                        <outlet property="statusLabel" destination="QgA-Rr-gnC" id="9it-hx-DAe"/>
+                        <outlet property="targetAvatarImageView" destination="bpT-4b-KVB" id="e3e-s8-Xbz"/>
+                        <outlet property="targetDataLabel" destination="he3-c4-FkI" id="SJU-12-I9i"/>
+                        <outlet property="targetRatingView" destination="n0v-ap-aOU" id="OW1-l4-WXL"/>
+                        <outlet property="titleLabel" destination="WaQ-3p-gNH" id="if9-j8-1K7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HiV-gb-Zaz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4156" y="-1490.1049475262371"/>
+        </scene>
+        <!--PreWashChecklist-->
+        <scene sceneID="lBj-Lf-TJ8">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PreWashChecklist" bundleIdentifier="com.beitsafe.KneetlyCommon" id="7pG-06-IJS" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9AM-iq-96Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4731" y="-1491"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bubbleBottleDeadpanLarge" width="85" height="193"/>
+        <image name="bucketDeadpanLarge" width="116" height="148"/>
+        <image name="kneetlyLogoLarge" width="260" height="66"/>
+        <image name="spongeHappyLarge" width="90" height="165"/>
+        <image name="triggerSprayDeadpanLarge" width="80" height="164"/>
+    </resources>
+</document>

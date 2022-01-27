@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GenderPicker" customModule="KneetlyCommon" customModuleProvider="target">
+            <connections>
+                <outlet property="femaleButton" destination="yHW-rq-qkf" id="xOL-dx-2ku"/>
+                <outlet property="maleButton" destination="EPc-BD-8d8" id="sDt-nF-pGq"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="138"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yHW-rq-qkf">
+                    <rect key="frame" x="56.5" y="0.0" width="110" height="108"/>
+                    <color key="tintColor" red="0.59999999999999998" green="0.67843137249999996" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" image="profileFemale"/>
+                    <connections>
+                        <action selector="femaleDidPicked:" destination="-1" eventType="touchDown" id="whz-Ft-2p9"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EPc-BD-8d8">
+                    <rect key="frame" x="223.5" y="0.0" width="110" height="108"/>
+                    <color key="tintColor" red="0.59999999999999998" green="0.67843137249999996" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" image="profileMale"/>
+                    <connections>
+                        <action selector="maleDidPicked:" destination="-1" eventType="touchDown" id="5Fz-Q2-iDj"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W0a-cM-gmI">
+                    <rect key="frame" x="0.0" y="0.0" width="56.5" height="1"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="XV8-Ce-g0Z"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VRm-cS-hNp">
+                    <rect key="frame" x="166.5" y="0.0" width="57" height="1"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="lex-vP-nDK"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GrD-MS-5vg">
+                    <rect key="frame" x="333.5" y="0.0" width="56.5" height="1"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="uai-pC-muN"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="yHW-rq-qkf" firstAttribute="width" secondItem="EPc-BD-8d8" secondAttribute="width" id="4HN-cY-O2M"/>
+                <constraint firstItem="VRm-cS-hNp" firstAttribute="leading" secondItem="yHW-rq-qkf" secondAttribute="trailing" id="5EN-nh-H5X"/>
+                <constraint firstItem="EPc-BD-8d8" firstAttribute="height" secondItem="yHW-rq-qkf" secondAttribute="height" id="5GJ-91-Id3"/>
+                <constraint firstItem="GrD-MS-5vg" firstAttribute="leading" secondItem="EPc-BD-8d8" secondAttribute="trailing" id="H3x-yV-23f"/>
+                <constraint firstItem="W0a-cM-gmI" firstAttribute="width" secondItem="VRm-cS-hNp" secondAttribute="width" id="LT7-iq-x61"/>
+                <constraint firstItem="yHW-rq-qkf" firstAttribute="leading" secondItem="W0a-cM-gmI" secondAttribute="trailing" id="NFe-6o-NS0"/>
+                <constraint firstItem="W0a-cM-gmI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="W4A-IT-GiM"/>
+                <constraint firstItem="GrD-MS-5vg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Xou-jC-RrV"/>
+                <constraint firstItem="VRm-cS-hNp" firstAttribute="width" secondItem="GrD-MS-5vg" secondAttribute="width" id="icV-84-Th2"/>
+                <constraint firstItem="yHW-rq-qkf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="iwl-xF-jcQ"/>
+                <constraint firstItem="W0a-cM-gmI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="juu-uY-nKG"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="yHW-rq-qkf" secondAttribute="bottom" id="k6e-md-Ncd"/>
+                <constraint firstItem="EPc-BD-8d8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="kK3-6d-nLA"/>
+                <constraint firstItem="EPc-BD-8d8" firstAttribute="leading" secondItem="VRm-cS-hNp" secondAttribute="trailing" id="qH2-Fw-azc"/>
+                <constraint firstItem="VRm-cS-hNp" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="r8U-nv-C8i"/>
+                <constraint firstAttribute="trailing" secondItem="GrD-MS-5vg" secondAttribute="trailing" id="uft-rg-g6Y"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="62" y="-316"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="profileFemale" width="110" height="108"/>
+        <image name="profileMale" width="106" height="106"/>
+    </resources>
+</document>

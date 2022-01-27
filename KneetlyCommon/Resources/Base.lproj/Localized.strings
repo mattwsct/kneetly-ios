@@ -1,0 +1,67 @@
+/* 
+  Localized.strings
+  KneetlyCommon
+
+  Created by Matt Westcott on 01.12.16.
+  Copyright © 2016 Be It Safe Pty Ltd. All rights reserved.
+*/
+
+"common.loadData.error.noConnection" = "Oops you have a connection problem, please check and try again";
+"common.loadData.error.unknown" = "There was a problem loading the information, please restart and try again";
+"common.loadData.error.retry" = "Retry";
+
+"wizardViewController.NextStep" = "next step";
+
+"wash.location-type.come-to-me" = "come to me";
+"wash.location-type.go-to-them" = "be at their location";
+"tutorial.watched" = "Watched";
+"tutorial.unwatched" = "Unwatched";
+
+"damage.submitState.button.title" = "submit";
+"damage.waitingForWasherState.button.title" = "waiting for washer";
+"damage.confirmState.button.title" = "confirm";
+"damage.waitingForClientState.button.title" = "waiting for client";
+"damage.startWashState.button.title" = "start wash";
+
+"badgeReceivedNotificationAlert.button.title" = "cool beans";
+
+"washer-waiting.washer-ready-label.text" = "washer ready and waiting";
+"washer-waiting.washer-awaiting-label.text" = "Your washer has accepted and is awaiting your arrival";
+"washer-incoming.washer-on-their-way-label.text" = "washer on their way";
+"washer-incoming.washer-is-driving-label.text" = "Your washer has accepted and is driving to you now";
+"user-waiting.title-label.format" = "%@ is waiting";
+"user-incoming.title-label.format" = "%@ is on the way";
+
+"share.no-facebook-account-error.message" = "There are no Facebook accounts configured. You can add or create Facebook account in Settings.";
+"share.no-twitter-account-error.message" = "There are no Twitter accounts configured. You can add or create Twitter account in Settings.";
+"share.sms-unavailable-error.message" = "SMS unavailable on this device.";
+"calls-unavailable-error.message" = "Calls unavailable on this device.";
+
+"support.phone-number" = "+61755888558";
+
+"review.choose-rating-error.text" = "Please choose rating";
+
+"wash-types.classic-wash.title" = "Classic Wash";
+"wash-types.classic-wash-plus.title" = "Classic Wash Plus";
+"wash-types.express-wash.title" = "Express Wash";
+"wash-types.express-wash-plus.title" = "Express Wash Plus";
+
+"wash-types.classic-wash.description" = "The classic wash, sometimes known as a deluxe wash consists of an exterior hand wash and wipe dry, interior vacuum and interior wipe over including windows & door frames along with wheel detailing.";
+"wash-types.classic-wash-plus.description" = "The classic plus wash consists of an exterior hand wash and wipe dry, interior vacuum and interior wipe over including windows & door frames, along with wheel detailing, PLUS the extra effort to remove bug & tar or excess mud & dirt.";
+"wash-types.express-wash.description" = "The express wash, sometimes known as the basic wash consists of an exterior hand wash and wipe dry, including wheel detailing.";
+"wash-types.express-wash-plus.description" = "The express plus wash consists of an exterior hand wash and wipe dry, including wheel detailing, PLUS the extra effort to remove bug & tar or excess mud & dirt.";
+
+"wash-types.classic-wash.small-car-price" = "$35";
+"wash-types.classic-wash-plus.small-car-price" = "$45";
+"wash-types.express-wash.small-car-price" = "$25";
+"wash-types.express-wash-plus.small-car-price" = "$35";
+
+"wash-types.classic-wash.medium-car-price" = "$40";
+"wash-types.classic-wash-plus.medium-car-price" = "$50";
+"wash-types.express-wash.medium-car-price" = "$30";
+"wash-types.express-wash-plus.medium-car-price" = "$40";
+
+"wash-types.classic-wash.large-car-price" = "$45";
+"wash-types.classic-wash-plus.large-car-price" = "$55";
+"wash-types.express-wash.large-car-price" = "$35";
+"wash-types.express-wash-plus.large-car-price" = "$45";

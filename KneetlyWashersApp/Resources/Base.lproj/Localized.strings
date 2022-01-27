@@ -1,0 +1,115 @@
+/*
+  File.strings
+  KneetlyWashersApp
+
+  Created by Matt Westcott on 21.01.17.
+  Copyright © 2017 Be It Safe Pty Ltd. All rights reserved.
+*/
+
+"common.ok-button.title" = "OK";
+
+"dashboard.my-rating-label.text" = "my current rating";
+
+"order-confirmation.title-label.text" = "Before going online, make sure you’re fully stocked with washing supplies and equipment.\nEnsure your car is ready to go and fuelled up.";
+"order-confirmation.im-ready-button.title" = "i’m ready";
+
+"review-user.how-was-your-wash-experience-label.text" = "how was your wash experience?";
+"review-user.comments-text-field.placeholder" = "comments (optional)";
+"review-user.confirm-button.title" = "confirm";
+
+"problems.what-s-the-problem-label.text" = "what's the problem?";
+"problems.comments-text-view.placeholder" = "add your comments";
+"problems.submit-button.title" = "submit";
+
+"faq.title-label.text" = "FAQ";
+
+"terms-conditions.title-label.text" = "terms and conditions";
+
+"help.title-label.text" = "help";
+"help.comments-text-view.placeholder" = "write your comments here";
+"help.submit-button.title" = "submit";
+
+"jobfound.title.scheduledJobFound" = "scheduled job found";
+"jobfound.title.jobfound" = "job found";
+"jobfound.washer-already-attached.message" = "Sorry you just missed out! Another washer confirmed the job, please keep looking.";
+
+"set-location.set-wash-location-label.text" = "set wash location";
+"set-location.accept-mobile-washes-label.text" = "accept mobile washes";
+"set-location.im-ready-button.title" = "i’m ready";
+"set-location.error.should-select-location" = "Please select location";
+
+"user-incoming-or-waiting.arrived-button.title" = "arrived";
+"user-incoming-or-waiting.upgrade-change-button.title" = "upgrade/change";
+"user-incoming-or-waiting.cancel-wash-button.title" = "cancel wash";
+
+"more.profile-button.text" = "profile";
+"more.badges-button.text" = "badges";
+"more.favourited-by-button.text" = "favourited by";
+"more.referral-button.text" = "referral";
+"more.washing-tutorials-button.text" = "washing tutorials";
+"more.washer-guide-button.text" = "washer guide";
+"more.wash-types-button.text" = "wash types";
+"more.help-button.text" = "help";
+"more.faq-button.text" = "FAQ";
+"more.terms-and-conditions-button.text" = "terms and conditions";
+"more.payment-info-button.text" = "payment info";
+"more.logout-button.text" = "logout";
+"more.washer-guide-link" = "https://kneetly.com/pdf/Kneetlywashersguide.pdf";
+
+"profile.header.title" = "Profile";
+"profile.profile-type-label.text" = "Personal";
+
+"edit-profile.first-name-text-field.placeholder" = "first name";
+"edit-profile.last-name-text-field.placeholder" = "last name";
+"edit-profile.email-text-field.placeholder" = "email";
+"edit-profile.mobile-number-text-field.placeholder" = "mobile number";
+"edit-profile.street-address-text-field.placeholder" = "street address";
+"edit-profile.suburb-text-field.placeholder" = "suburb";
+"edit-profile.state-text-field.placeholder" = "state";
+"edit-profile.country-text-field.placeholder" = "country";
+"edit-profile.postcode-text-field.placeholder" = "postcode";
+"edit-profile.save-button.title" = "save";
+
+"favourited-by.favourited-time-label.text" = "Favourited on the %@";
+"favourited-by.washes-count-label.text" = "Vehicles washed %@ times";
+
+"payment-account-info.title-label.text" = "Bank Details";
+"payment-account-info.account-name-text-field.placeholder" = "account name";
+"payment-account-info.account-number-text-field.placeholder" = "account number";
+"payment-account-info.bsb-text-field.placeholder" = "bsb";
+"payment-account-info.bank-text-field.placeholder" = "bank";
+"payment-account-info.save-button.title" = "save";
+
+"payment-history.title-label.text" = "Payment History";
+
+"referral.title-label.text" = "Your referral code";
+"referral.facebook-button.title" = "Share on Facebook";
+"referral.twitter-button.title" = "Share on Twitter";
+"referral.iphone-button.title" = "Share on iPhone";
+"referral.message-label.text" = "Invite friends and family to join Kneetly as a washer!";
+
+"wash.canceled.message" =  "Unfortunately the user had to cancel the booking";
+
+"wash-in-progress.wash-info-label.text" = "You are doing a %@ on %@";
+"wash-in-progress.complete.button.title" = "complete wash";
+"wash-in-progress.problems-button.title" = "problems?";
+"wash-in-progress.wash-in-progress-label.text" = "wash in progress";
+
+"review-washer.how-was-your-wash-experience-label.text" = "how was your wash experience?";
+"review-washer.confirm-button.title" = "confirm";
+
+"change-wash.title-label.text" = "upgrade/change wash details";
+"change-wash.description-label.text" = "Here you can upgrade/change the wash type or vehicle, this is in case the vehicle is different is not correct or if the user wants to change their wash type.";
+"change-wash.image-label.text" = "add an image";
+"change-wash.change-wash-type-label.text" = "change wash type";
+"change-wash.change-vehicle-label.text" = "change vehicle";
+"change-wash.refund.text" = "refund";
+"change-wash.additional-charges.text" = "additional charges";
+"change-wash.refund-additional-charges-label.text" = "refund/additional charges";
+"change-wash.description-text-view.placeholder" = "description";
+"change-wash.save-button.title" = "save";
+
+"call-kneetly-button.title" = "call kneetly";
+
+"tutorial.continue-button.title" = "continue";
+"tutorial.description-label.text" = "Please finish watching the above\nvideos to continue to your dashboard";
